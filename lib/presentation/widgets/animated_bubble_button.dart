@@ -1,4 +1,4 @@
-import 'package:portfolio/presentation/widgets/spaces.dart';
+import 'package:portfolio/const/spaces.dart';
 import 'package:portfolio/values/values.dart';
 import 'package:flutter/material.dart';
 
@@ -14,8 +14,8 @@ class AnimatedBubbleButton extends StatefulWidget {
     this.startBorderRadius = const BorderRadius.all(Radius.circular(80.0)),
     this.endBorderRadius,
     this.curve = Curves.easeIn,
-    this.color = AppColors.black100,
-    this.imageColor = AppColors.accentColor,
+    this.color = black100,
+    this.imageColor = accentColor,
     this.offsetAnimation,
     this.duration = const Duration(milliseconds: 300),
     this.onTap,
@@ -86,7 +86,7 @@ class _AnimatedBubbleButtonState extends State<AnimatedBubbleButton>
   Widget build(BuildContext context) {
     TextTheme textTheme = Theme.of(context).textTheme;
     TextStyle? buttonStyle = textTheme.bodyText1?.copyWith(
-      color: AppColors.accentColor,
+      color: accentColor,
       fontSize: Sizes.TEXT_SIZE_16,
       fontWeight: FontWeight.w500,
     );

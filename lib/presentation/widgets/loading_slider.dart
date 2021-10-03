@@ -9,7 +9,7 @@ class LoadingSlider extends AnimatedWidget {
     required this.controller,
     this.curve = Curves.fastLinearToSlowEaseIn,
     this.isSlideForward = true,
-    this.color = AppColors.black,
+    this.color = black,
   }) : super(key: key, listenable: controller);
 
   final AnimationController controller;

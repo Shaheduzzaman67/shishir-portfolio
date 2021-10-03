@@ -41,7 +41,7 @@ class _SlidingBannerState extends State<SlidingBanner>
     return Container(
       width: widthOfScreen(context),
       height: assignHeight(context, 0.5),
-      color: AppColors.black,
+      color: black,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -59,7 +59,7 @@ class _SlidingBannerState extends State<SlidingBanner>
             child: Text(
               "TITLE",
               style: textTheme.headline3?.copyWith(
-                color: AppColors.white,
+                color: white,
               ),
             ),
           )

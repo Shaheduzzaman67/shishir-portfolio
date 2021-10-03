@@ -8,7 +8,7 @@ class AnimatedWaveLine extends AnimatedWidget {
     required this.height,
     this.width = 1.5,
     this.animation,
-    this.color = AppColors.errorRed,
+    this.color = errorRed,
     this.curve = Curves.fastOutSlowIn,
   }) : super(key: key, listenable: controller);
 

@@ -23,7 +23,7 @@ class AeriumTextFormField extends StatelessWidget {
     this.onChanged,
     this.validator,
     this.inputFormatters,
-    this.fillColor = AppColors.lightGreen,
+    this.fillColor = lightGreen,
     this.filled = false,
     this.maxLines = 1,
     this.controller,
@@ -62,7 +62,7 @@ class AeriumTextFormField extends StatelessWidget {
         TextFormField(
           style: textStyle ??
               textTheme.bodyText1?.copyWith(
-                color: AppColors.black,
+                color: black,
                 fontWeight: FontWeight.w400,
               ),
 
@@ -84,7 +84,7 @@ class AeriumTextFormField extends StatelessWidget {
             hintText: hintText,
             hintStyle: hintTextStyle ??
                 textTheme.bodyText1?.copyWith(
-                  color: AppColors.grey600,
+                  color: grey600,
                 ),
           ),
           obscureText: obscured,

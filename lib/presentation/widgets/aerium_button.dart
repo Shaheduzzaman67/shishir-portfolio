@@ -1,4 +1,4 @@
-import 'package:portfolio/presentation/widgets/spaces.dart';
+import 'package:portfolio/const/spaces.dart';
 import 'package:portfolio/values/values.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
@@ -14,10 +14,10 @@ class AeriumButton extends StatefulWidget {
     this.height = Sizes.HEIGHT_44,
     this.onPressed,
     this.hasIcon = true,
-    this.iconColor = AppColors.white,
-    this.buttonColor = AppColors.black,
-    this.borderColor = AppColors.black,
-    this.onHoverColor = AppColors.white,
+    this.iconColor = white,
+    this.buttonColor = black,
+    this.borderColor = black,
+    this.onHoverColor = white,
     this.iconData = FontAwesomeIcons.telegramPlane,
     this.iconSize = Sizes.ICON_SIZE_14,
     this.duration = const Duration(milliseconds: 200),

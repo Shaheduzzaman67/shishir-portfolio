@@ -31,9 +31,9 @@ class PageWrapper extends StatefulWidget {
       this.hasUnveilPageAnimation = true,
       this.reverseAnimationOnPop = true,
       this.backgroundColor,
-      this.navBarTitleColor = AppColors.grey600,
-      this.navBarSelectedTitleColor = AppColors.black,
-      this.appLogoColor = AppColors.black})
+      this.navBarTitleColor = grey600,
+      this.navBarSelectedTitleColor = black,
+      this.appLogoColor = black})
       : super(key: key);
 
   final String selectedRoute;

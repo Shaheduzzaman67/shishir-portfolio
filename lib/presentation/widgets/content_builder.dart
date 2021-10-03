@@ -1,7 +1,7 @@
 import 'package:portfolio/core/layout/adaptive.dart';
 import 'package:portfolio/presentation/widgets/animated_text_slide_box_transition.dart';
 import 'package:portfolio/presentation/widgets/empty.dart';
-import 'package:portfolio/presentation/widgets/spaces.dart';
+import 'package:portfolio/const/spaces.dart';
 import 'package:portfolio/values/values.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
@@ -39,16 +39,16 @@ class ContentBuilder extends StatelessWidget {
     TextTheme textTheme = Theme.of(context).textTheme;
     TextStyle? defaultNumberStyle = textTheme.bodyText1?.copyWith(
       fontSize: Sizes.TEXT_SIZE_10,
-      color: AppColors.black,
+      color: black,
       fontWeight: FontWeight.w400,
       height: 2.0,
       letterSpacing: 2,
     );
     TextStyle? defaultSectionStyle = defaultNumberStyle?.copyWith(
-      color: AppColors.grey600,
+      color: grey600,
     );
     TextStyle? defaultTitleStyle = textTheme.subtitle1?.copyWith(
-      color: AppColors.black,
+      color: black,
       fontSize: responsiveSize(
         context,
         Sizes.TEXT_SIZE_16,

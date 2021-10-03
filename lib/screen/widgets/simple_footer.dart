@@ -2,7 +2,7 @@ import 'package:portfolio/core/layout/adaptive.dart';
 import 'package:portfolio/core/utils/functions.dart';
 import 'package:portfolio/screen/widgets/socials.dart';
 import 'package:portfolio/presentation/widgets/animated_line_through_text.dart';
-import 'package:portfolio/presentation/widgets/spaces.dart';
+import 'package:portfolio/const/spaces.dart';
 import 'package:portfolio/values/values.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -13,7 +13,7 @@ class SimpleFooter extends StatelessWidget {
     Key? key,
     this.height,
     this.width,
-    this.backgroundColor = AppColors.black,
+    this.backgroundColor = black,
   }) : super(key: key);
 
   final double? width;
@@ -60,7 +60,7 @@ class SimpleFooterSm extends StatelessWidget {
   Widget build(BuildContext context) {
     TextTheme textTheme = Theme.of(context).textTheme;
     TextStyle? style = textTheme.bodyText1?.copyWith(
-      color: AppColors.accentColor,
+      color: accentColor,
       fontSize: Sizes.TEXT_SIZE_14,
     );
     return Column(
@@ -88,8 +88,8 @@ class SimpleFooterSm extends StatelessWidget {
                 text: DESIGNED_BY,
                 isUnderlinedByDefault: true,
                 isUnderlinedOnHover: false,
-                hoverColor: AppColors.white,
-                coverColor: AppColors.black,
+                hoverColor: white,
+                coverColor: black,
                 textStyle: style?.copyWith(
                   decoration: TextDecoration.underline,
                 ),
@@ -111,7 +111,7 @@ class SimpleFooterLg extends StatelessWidget {
   Widget build(BuildContext context) {
     TextTheme textTheme = Theme.of(context).textTheme;
     TextStyle? style = textTheme.bodyText1?.copyWith(
-      color: AppColors.accentColor,
+      color: accentColor,
       fontSize: Sizes.TEXT_SIZE_14,
     );
     return Column(
@@ -139,8 +139,8 @@ class SimpleFooterLg extends StatelessWidget {
                 text: DESIGNED_BY,
                 isUnderlinedByDefault: true,
                 isUnderlinedOnHover: false,
-                hoverColor: AppColors.white,
-                coverColor: AppColors.black,
+                hoverColor: white,
+                coverColor: black,
                 textStyle: style?.copyWith(
                   decoration: TextDecoration.underline,
                 ),
@@ -162,7 +162,7 @@ class BuiltWithFlutter extends StatelessWidget {
   Widget build(BuildContext context) {
     TextTheme textTheme = Theme.of(context).textTheme;
     TextStyle? style = textTheme.bodyText1?.copyWith(
-      color: AppColors.accentColor,
+      color: accentColor,
       fontSize: Sizes.TEXT_SIZE_14,
     );
     return Row(
@@ -182,7 +182,7 @@ class BuiltWithFlutter extends StatelessWidget {
         Icon(
           FontAwesomeIcons.solidHeart,
           size: 14,
-          color: AppColors.errorRed,
+          color: errorRed,
         )
       ],
     );

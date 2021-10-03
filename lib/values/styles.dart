@@ -4,7 +4,7 @@ class Styles {
 
 
   static TextStyle customTextStyle({
-    Color color = AppColors.primaryColor,
+    Color color = primaryColor,
     FontWeight fontWeight = FontWeight.w600,
     double fontSize = Sizes.TEXT_SIZE_14,
     FontStyle fontStyle: FontStyle.normal,
@@ -18,7 +18,7 @@ class Styles {
   }
 
   static TextStyle customTextStyle2({
-    Color color = AppColors.secondaryColor,
+    Color color = secondaryColor,
     FontWeight fontWeight = FontWeight.w600,
     double fontSize = Sizes.TEXT_SIZE_16,
     FontStyle fontStyle: FontStyle.normal,
@@ -32,7 +32,7 @@ class Styles {
   }
 
   static TextStyle customTextStyle3({
-    Color color = AppColors.secondaryColor,
+    Color color = secondaryColor,
     FontWeight fontWeight = FontWeight.w600,
     double fontSize = Sizes.TEXT_SIZE_16,
     FontStyle fontStyle: FontStyle.normal,
@@ -46,7 +46,7 @@ class Styles {
   }
 
   static TextStyle customTextStyle4({
-    Color color = AppColors.secondaryColor,
+    Color color = secondaryColor,
     FontWeight fontWeight = FontWeight.w600,
     double fontSize = Sizes.TEXT_SIZE_16,
     FontStyle fontStyle: FontStyle.normal,

@@ -11,8 +11,8 @@ class AnimatedSlideBox extends AnimatedWidget {
     required this.width,
     this.visibleBoxAnimation,
     this.invisibleBoxAnimation,
-    this.boxColor = AppColors.black,
-    this.coverColor = AppColors.primaryColor,
+    this.boxColor = black,
+    this.coverColor = primaryColor,
     this.visibleBoxCurve = Curves.fastOutSlowIn,
     this.invisibleBoxCurve = Curves.fastOutSlowIn,
   }) : super(key: key, listenable: controller);

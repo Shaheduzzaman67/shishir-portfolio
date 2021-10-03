@@ -8,7 +8,7 @@ import 'package:portfolio/presentation/widgets/custom_spacer.dart';
 import 'package:portfolio/presentation/widgets/empty.dart';
 import 'package:portfolio/presentation/widgets/page_wrapper.dart';
 import 'package:portfolio/presentation/widgets/project_item.dart';
-import 'package:portfolio/presentation/widgets/spaces.dart';
+import 'package:portfolio/const/spaces.dart';
 import 'package:portfolio/screen/project_detail/widgets/about_project_screen.dart';
 import 'package:portfolio/screen/project_detail/widgets/next_project_screen.dart';
 import 'package:portfolio/values/values.dart';
@@ -96,11 +96,11 @@ class _ProjectDetailPageState extends State<ProjectDetailPage>
     getArguments();
     TextTheme textTheme = Theme.of(context).textTheme;
     TextStyle? coverTitleStyle = textTheme.headline2?.copyWith(
-      color: AppColors.white,
+      color: white,
       fontSize: 40,
     );
     TextStyle? coverSubtitleStyle = textTheme.bodyText1?.copyWith(
-      color: AppColors.white,
+      color: white,
     );
     EdgeInsetsGeometry padding = EdgeInsets.only(
       left: responsiveSize(
@@ -121,7 +121,7 @@ class _ProjectDetailPageState extends State<ProjectDetailPage>
       assignWidth(context, 0.80),
     );
     return PageWrapper(
-      backgroundColor: AppColors.white,
+      backgroundColor: white,
       selectedRoute: ProjectDetailPage.projectDetailPageRoute,
       hasSideTitle: false,
       selectedPageName: PROJECT,

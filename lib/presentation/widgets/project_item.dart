@@ -1,6 +1,6 @@
 import 'package:portfolio/core/layout/adaptive.dart';
 import 'package:portfolio/presentation/widgets/animated_bubble_button.dart';
-import 'package:portfolio/presentation/widgets/spaces.dart';
+import 'package:portfolio/const/spaces.dart';
 import 'package:portfolio/values/values.dart';
 import 'package:flutter/material.dart';
 
@@ -25,9 +25,9 @@ class ProjectItemData {
     this.hasBeenReleased = true,
     this.playStoreUrl = "",
     this.webUrl = "",
-    this.navTitleColor = AppColors.grey600,
-    this.navSelectedTitleColor = AppColors.black,
-    this.appLogoColor = AppColors.black,
+    this.navTitleColor = grey600,
+    this.navSelectedTitleColor = black,
+    this.appLogoColor = black,
   });
 
   final Color primaryColor;
@@ -65,7 +65,7 @@ class ProjectData extends StatelessWidget {
     this.projectNumberStyle,
     this.subtitleStyle,
     this.titleStyle,
-    this.indicatorColor = AppColors.grey550,
+    this.indicatorColor = grey550,
     this.indicatorHeight = Sizes.HEIGHT_1,
     this.indicatorWidth = Sizes.WIDTH_150,
     this.indicatorMargin,
@@ -154,8 +154,8 @@ class ProjectItemLg extends StatefulWidget {
     this.coloredContainerHeight,
     this.coloredContainerWidth,
     this.buttonTitle = VIEW,
-    this.backgroundOnHoverColor = AppColors.primaryColor,
-    this.backgroundColor = AppColors.accentColor2,
+    this.backgroundOnHoverColor = primaryColor,
+    this.backgroundColor = accentColor2,
     this.projectNumberStyle,
     this.subtitleStyle,
     this.titleStyle,
@@ -314,7 +314,7 @@ class _ProjectItemLgState extends State<ProjectItemLg>
     TextTheme textTheme = Theme.of(context).textTheme;
     // textStyle for button for viewing project
     TextStyle? buttonStyle = textTheme.bodyText1?.copyWith(
-      color: AppColors.black,
+      color: black,
       fontSize: responsiveSize(
         context,
         Sizes.TEXT_SIZE_14,
@@ -327,19 +327,19 @@ class _ProjectItemLgState extends State<ProjectItemLg>
     TextStyle? defaultNumberStyle = widget.projectNumberStyle ??
         textTheme.subtitle1?.copyWith(
           fontSize: _isHovering ? Sizes.TEXT_SIZE_20 : Sizes.TEXT_SIZE_16,
-          color: AppColors.grey550,
+          color: grey550,
           fontWeight: _isHovering ? FontWeight.w400 : FontWeight.w300,
         );
     // textStyle for the title or name of the project
     TextStyle? defaultTitleStyle = widget.titleStyle ??
         textTheme.subtitle1?.copyWith(
-          color: AppColors.black,
+          color: black,
           fontSize: responsiveSize(context, 24, 40, md: 36, sm: 30),
         );
     // textStyle for the subtitle (describing project platform) of the project
     TextStyle? defaultSubtitleStyle = widget.subtitleStyle ??
         textTheme.bodyText1?.copyWith(
-          color: AppColors.grey700,
+          color: grey700,
           fontSize: 13,
           fontWeight: FontWeight.w400,
           letterSpacing: 2.5,
@@ -433,9 +433,9 @@ class _ProjectItemLgState extends State<ProjectItemLg>
                 startBorderRadius:
                     const BorderRadius.all(Radius.circular(100.0)),
                 title: VIEW_PROJECT.toUpperCase(),
-                color: AppColors.grey100,
+                color: grey100,
                 titleStyle: buttonStyle,
-                imageColor: AppColors.black,
+                imageColor: black,
                 onTap: widget.onTap,
               ),
             ),
@@ -539,7 +539,7 @@ class _ProjectItemSmState extends State<ProjectItemSm>
     TextTheme textTheme = Theme.of(context).textTheme;
     // textStyle for button for viewing project
     TextStyle? buttonStyle = textTheme.bodyText1?.copyWith(
-      color: AppColors.black,
+      color: black,
       fontSize: Sizes.TEXT_SIZE_14,
       fontWeight: FontWeight.w500,
     );
@@ -547,19 +547,19 @@ class _ProjectItemSmState extends State<ProjectItemSm>
     TextStyle? defaultNumberStyle = widget.projectNumberStyle ??
         textTheme.subtitle1?.copyWith(
           fontSize: _isHovering ? Sizes.TEXT_SIZE_18 : Sizes.TEXT_SIZE_16,
-          color: AppColors.grey550,
+          color: grey550,
           fontWeight: _isHovering ? FontWeight.w400 : FontWeight.w300,
         );
     // textStyle for the title or name of the project
     TextStyle? defaultTitleStyle = widget.titleStyle ??
         textTheme.subtitle1?.copyWith(
-          color: AppColors.black,
+          color: black,
           fontSize: 26,
         );
     // textStyle for the subtitle (describing project platform) of the project
     TextStyle? defaultSubtitleStyle = widget.subtitleStyle ??
         textTheme.bodyText1?.copyWith(
-          color: AppColors.grey700,
+          color: grey700,
           fontSize: 12,
           fontWeight: FontWeight.w400,
           letterSpacing: 2.5,
@@ -645,9 +645,9 @@ class _ProjectItemSmState extends State<ProjectItemSm>
                   startBorderRadius:
                       const BorderRadius.all(Radius.circular(100.0)),
                   title: VIEW_PROJECT.toUpperCase(),
-                  color: AppColors.grey100,
+                  color: grey100,
                   titleStyle: buttonStyle,
-                  imageColor: AppColors.black,
+                  imageColor: black,
                   onTap: widget.onTap,
                 ),
               ),

@@ -6,7 +6,7 @@ import 'package:portfolio/presentation/widgets/animated_positioned_widget.dart';
 import 'package:portfolio/presentation/widgets/animated_text_slide_box_transition.dart';
 import 'package:portfolio/presentation/widgets/empty.dart';
 import 'package:portfolio/presentation/widgets/project_item.dart';
-import 'package:portfolio/presentation/widgets/spaces.dart';
+import 'package:portfolio/const/spaces.dart';
 import 'package:portfolio/values/values.dart';
 import 'package:flutter/material.dart';
 
@@ -56,7 +56,7 @@ class _AboutprojectState extends State<Aboutproject> {
     TextTheme textTheme = Theme.of(context).textTheme;
     TextStyle? bodyTextStyle = textTheme.bodyText1?.copyWith(
       fontSize: Sizes.TEXT_SIZE_18,
-      color: AppColors.grey750,
+      color: grey750,
       fontWeight: FontWeight.w400,
       height: 2.0,
     );
@@ -73,7 +73,7 @@ class _AboutprojectState extends State<Aboutproject> {
       Radius.circular(100.0),
     );
     TextStyle? buttonStyle = textTheme.bodyText1?.copyWith(
-      color: AppColors.black,
+      color: black,
       fontSize: responsiveSize(
         context,
         Sizes.TEXT_SIZE_14,
@@ -89,7 +89,7 @@ class _AboutprojectState extends State<Aboutproject> {
           AnimatedTextSlideBoxTransition(
             controller: widget.controller,
             text: ABOUT_PROJECT,
-            coverColor: AppColors.white,
+            coverColor: white,
             textStyle: textTheme.headline4?.copyWith(
               fontSize: Sizes.TEXT_SIZE_48,
             ),
@@ -128,7 +128,7 @@ class _AboutprojectState extends State<Aboutproject> {
                   controller: widget.projectDataController,
                   width: widthOfProjectItem,
                   title: AUTHOR,
-                  subtitle: DEV_NAME,
+                  subtitle: MY_NAME,
                 ),
               ],
             ),
@@ -162,8 +162,8 @@ class _AboutprojectState extends State<Aboutproject> {
                       height: initialWidth,
                       child: AnimatedBubbleButton(
                         title: LAUNCH_APP,
-                        color: AppColors.grey100,
-                        imageColor: AppColors.black,
+                        color: grey100,
+                        imageColor: black,
                         startBorderRadius: borderRadius,
                           startWidth: initialWidth,
                         height: initialWidth,
@@ -188,8 +188,8 @@ class _AboutprojectState extends State<Aboutproject> {
                       height: initialWidth,
                       child: AnimatedBubbleButton(
                         title: SOURCE_CODE,
-                        color: AppColors.grey100,
-                        imageColor: AppColors.black,
+                        color: grey100,
+                        imageColor: black,
                         startBorderRadius: borderRadius,
                         startWidth: initialWidth,
                         height: initialWidth,
@@ -258,7 +258,7 @@ class ProjectData extends StatelessWidget {
     TextTheme textTheme = Theme.of(context).textTheme;
 
     TextStyle? defaultTitleStyle = textTheme.subtitle1?.copyWith(
-      color: AppColors.black,
+      color: black,
       fontSize: 17,
     );
     TextStyle? defaultSubtitleStyle = textTheme.bodyText1?.copyWith(
@@ -274,7 +274,7 @@ class ProjectData extends StatelessWidget {
           AnimatedTextSlideBoxTransition(
             width: width,
             maxLines: 2,
-            coverColor: AppColors.white,
+            coverColor: white,
             controller: controller,
             text: title,
             textStyle: titleStyle ?? defaultTitleStyle,

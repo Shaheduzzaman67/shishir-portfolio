@@ -1,7 +1,7 @@
 import 'package:portfolio/core/layout/adaptive.dart';
 import 'package:portfolio/presentation/widgets/animated_text_slide_box_transition.dart';
 import 'package:portfolio/presentation/widgets/content_area.dart';
-import 'package:portfolio/presentation/widgets/spaces.dart';
+import 'package:portfolio/const/spaces.dart';
 import 'package:portfolio/values/values.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
@@ -43,7 +43,7 @@ class AboutHeader extends StatelessWidget {
               ),
               SpaceH30(),
               Container(
-                color: AppColors.black,
+                color: black,
                 child: Image.asset(
                   ImagePath.DEV,
                   width: widthOfScreen(context),
@@ -67,7 +67,7 @@ class AboutHeader extends StatelessWidget {
                 width: spacing,
               ),
               Container(
-                color: AppColors.black,
+                color: black,
                 child: ConstrainedBox(
                   constraints: BoxConstraints(
                     maxWidth: imageWidthLg,

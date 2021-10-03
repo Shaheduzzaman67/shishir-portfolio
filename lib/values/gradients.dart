@@ -6,8 +6,8 @@ class Gradients {
 //    focalRadius: 1.0,
     radius: 1.0,
     colors: [
-      AppColors.accentColor,
-      AppColors.primaryColor,
+      accentColor,
+      primaryColor,
     ],
   );
 

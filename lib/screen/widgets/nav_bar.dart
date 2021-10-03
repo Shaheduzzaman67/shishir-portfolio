@@ -5,7 +5,7 @@ import 'package:portfolio/presentation/widgets/animated_text_slide_box_transitio
 import 'package:portfolio/presentation/widgets/app_logo.dart';
 import 'package:portfolio/presentation/widgets/empty.dart';
 import 'package:portfolio/presentation/widgets/nav_item.dart';
-import 'package:portfolio/presentation/widgets/spaces.dart';
+import 'package:portfolio/const/spaces.dart';
 import 'package:portfolio/values/values.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
@@ -21,9 +21,9 @@ class NavBar extends StatelessWidget {
     this.onMenuTap,
     this.onNavItemWebTap,
     this.hasSideTitle = true,
-    this.selectedTitleColor = AppColors.black,
-    this.titleColor = AppColors.grey600,
-    this.appLogoColor = AppColors.black,
+    this.selectedTitleColor = black,
+    this.titleColor = grey600,
+    this.appLogoColor = black,
   }) : super(key: key);
 
   final String selectedRouteTitle;
@@ -80,7 +80,7 @@ class NavBar extends StatelessWidget {
     TextTheme textTheme = Theme.of(context).textTheme;
     TextStyle? style = selectedRouteTitleStyle ??
         textTheme.bodyText1?.copyWith(
-          color: AppColors.black,
+          color: black,
           fontWeight: FontWeight.w400,
           fontSize: Sizes.TEXT_SIZE_12,
         );
@@ -103,7 +103,7 @@ class NavBar extends StatelessWidget {
                 height: Sizes.HEIGHT_36,
                 hasIcon: false,
                 width: 80,
-                buttonColor: AppColors.white,
+                buttonColor: white,
                 borderColor: appLogoColor,
                 onHoverColor: appLogoColor,
                 title: RESUME.toUpperCase(),

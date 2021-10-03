@@ -8,7 +8,7 @@ import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-part 'colors.dart';
+part '../const/colors.dart';
 part 'borders.dart';
 part '../const/images.dart';
 part 'sizes.dart';

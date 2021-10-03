@@ -23,8 +23,8 @@ class NavItem extends StatefulWidget {
     required this.index,
     required this.controller,
      
-    this.titleColor = AppColors.grey600,
-    this.selectedColor = AppColors.black,
+    this.titleColor = grey600,
+    this.selectedColor = black,
     this.isSelected = false,
     this.isMobile = false,
     this.titleStyle,
@@ -104,15 +104,15 @@ class _NavItemState extends State<NavItem> {
                         widget.titleStyle ??
                         textTheme.headline6?.copyWith(
                           fontSize: selectedTextSize,
-                          color: AppColors.accentColor,
+                          color: accentColor,
                           fontWeight: FontWeight.w400,
                         ),
-                    hoverColor: AppColors.accentColor,
-                    coverColor: AppColors.black,
+                    hoverColor: accentColor,
+                    coverColor: black,
                     lineThickness: 4,
                     onHoverTextStyle: textTheme.headline6?.copyWith(
                       fontSize: selectedTextSize,
-                      color: AppColors.accentColor,
+                      color: accentColor,
                       fontWeight: FontWeight.w400,
                     ),
                   ),
@@ -147,12 +147,12 @@ class _NavItemState extends State<NavItem> {
                             fontSize: unselectedTextSize,
                             fontWeight: FontWeight.w400,
                           ),
-                      hoverColor: AppColors.accentColor,
-                      coverColor: AppColors.black,
+                      hoverColor: accentColor,
+                      coverColor: black,
                       lineThickness: 4,
                       onHoverTextStyle: textTheme.bodyText1?.copyWith(
                         fontSize: unselectedTextSize,
-                        color: AppColors.accentColor,
+                        color: accentColor,
                         fontWeight: FontWeight.w400,
                       ),
                     ),
@@ -212,7 +212,7 @@ class _NavItemState extends State<NavItem> {
         style: widget.titleStyle ??
             textTheme.headline2?.copyWith(
               fontSize: indexTextSize,
-              color: AppColors.grey800,
+              color: grey800,
               // fontWeight: FontWeight.w400,
             ),
       ),

@@ -3,7 +3,7 @@ import 'package:portfolio/screen/widgets/simple_footer.dart';
 import 'package:portfolio/presentation/widgets/animated_bubble_button.dart';
 import 'package:portfolio/presentation/widgets/animated_positioned_text.dart';
 import 'package:portfolio/presentation/widgets/animated_positioned_widget.dart';
-import 'package:portfolio/presentation/widgets/spaces.dart';
+import 'package:portfolio/const/spaces.dart';
 import 'package:portfolio/values/values.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
@@ -16,7 +16,7 @@ class AnimatedFooter extends StatefulWidget {
     Key? key,
     this.height,
     this.width,
-    this.backgroundColor = AppColors.black,
+    this.backgroundColor = black,
   }) : super(key: key);
 
   final double? width;
@@ -51,11 +51,11 @@ class _AnimatedFooterState extends State<AnimatedFooter>
     double circleImageSize = responsiveSize(context, 100, 150);
     TextTheme textTheme = Theme.of(context).textTheme;
     TextStyle? style = textTheme.bodyText1?.copyWith(
-      color: AppColors.accentColor,
+      color: accentColor,
       fontSize: Sizes.TEXT_SIZE_14,
     );
     TextStyle? titleStyle = textTheme.headline4?.copyWith(
-      color: AppColors.accentColor,
+      color: accentColor,
       fontSize: responsiveSize(
         context,
         Sizes.TEXT_SIZE_30,
@@ -64,7 +64,7 @@ class _AnimatedFooterState extends State<AnimatedFooter>
       ),
     );
     TextStyle? subtitleStyle = style?.copyWith(
-      color: AppColors.grey550,
+      color: grey550,
       fontSize: Sizes.TEXT_SIZE_18,
       fontWeight: FontWeight.w400,
     );
@@ -105,7 +105,7 @@ class _AnimatedFooterState extends State<AnimatedFooter>
                       height: circleImageSize,
                       child: Image.asset(
                         ImagePath.CIRCLE,
-                        color: AppColors.white,
+                        color: white,
                       ),
                     ),
                   ),

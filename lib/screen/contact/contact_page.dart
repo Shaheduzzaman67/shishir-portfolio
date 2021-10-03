@@ -9,7 +9,7 @@ import 'package:portfolio/presentation/widgets/aerium_text_form_field.dart';
 import 'package:portfolio/presentation/widgets/content_area.dart';
 import 'package:portfolio/presentation/widgets/custom_spacer.dart';
 import 'package:portfolio/presentation/widgets/page_wrapper.dart';
-import 'package:portfolio/presentation/widgets/spaces.dart';
+import 'package:portfolio/const/spaces.dart';
 import 'package:portfolio/values/values.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -96,11 +96,11 @@ class _ContactPageState extends State<ContactPage>
   Widget build(BuildContext context) {
     TextTheme textTheme = Theme.of(context).textTheme;
     TextStyle? initialErrorStyle = textTheme.bodyText1?.copyWith(
-      color: AppColors.white,
+      color: white,
       fontSize: Sizes.TEXT_SIZE_12,
     );
     TextStyle? errorStyle = textTheme.bodyText1?.copyWith(
-      color: AppColors.errorRed,
+      color: errorRed,
       fontWeight: FontWeight.w400,
       fontSize: Sizes.TEXT_SIZE_12,
       letterSpacing: 1,
@@ -134,7 +134,7 @@ class _ContactPageState extends State<ContactPage>
       ),
     );
     TextStyle? headingStyle = textTheme.headline2?.copyWith(
-      color: AppColors.black,
+      color: black,
       fontSize: responsiveSize(context, 40, 60),
     );
     return BlocConsumer<EmailBloc, EmailState>(
@@ -146,13 +146,13 @@ class _ContactPageState extends State<ContactPage>
             });
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(
-                backgroundColor: AppColors.errorRed,
+                backgroundColor: errorRed,
                 content: Text(
                   EMAIL_FAILED_RESPONSE,
                   textAlign: TextAlign.center,
                   style: textTheme.bodyText1?.copyWith(
                     fontSize: Sizes.TEXT_SIZE_16,
-                    color: AppColors.black,
+                    color: black,
                   ),
                 ),
                 duration: Animations.emailSnackBarDuration,
@@ -166,13 +166,13 @@ class _ContactPageState extends State<ContactPage>
             clearText();
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(
-                backgroundColor: AppColors.white,
+                backgroundColor: white,
                 content: Text(
                   EMAIL_RESPONSE,
                   textAlign: TextAlign.center,
                   style: textTheme.bodyText1?.copyWith(
                     fontSize: Sizes.TEXT_SIZE_16,
-                    color: AppColors.black,
+                    color: black,
                   ),
                 ),
                 duration: Animations.emailSnackBarDuration,
@@ -218,7 +218,7 @@ class _ContactPageState extends State<ContactPage>
                           text: CONTACT_MSG,
                           maxLines: 5,
                           textStyle: textTheme.bodyText1?.copyWith(
-                            color: AppColors.grey700,
+                            color: grey700,
                             height: 2.0,
                             fontSize: responsiveSize(
                               context,

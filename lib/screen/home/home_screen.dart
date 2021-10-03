@@ -1,7 +1,7 @@
 import 'package:portfolio/core/layout/adaptive.dart';
 import 'package:portfolio/core/utils/functions.dart';
 import 'package:portfolio/screen/home/widget/home_screen_header.dart';
-import 'package:portfolio/screen/widgets/loading_page.dart';
+import 'package:portfolio/screen/widgets/custom_loading_screen.dart';
 import 'package:portfolio/screen/widgets/animated_footer.dart';
 
 import 'package:portfolio/presentation/widgets/animated_positioned_text.dart';
@@ -10,7 +10,7 @@ import 'package:portfolio/presentation/widgets/animated_text_slide_box_transitio
 import 'package:portfolio/presentation/widgets/custom_spacer.dart';
 import 'package:portfolio/presentation/widgets/page_wrapper.dart';
 import 'package:portfolio/presentation/widgets/project_item.dart';
-import 'package:portfolio/presentation/widgets/spaces.dart';
+import 'package:portfolio/const/spaces.dart';
 import 'package:flutter/material.dart';
 import 'package:portfolio/screen/works/works_screen.dart';
 import 'package:portfolio/values/values.dart';
@@ -83,7 +83,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     double extra = projectItemHeight - subHeight;
     TextTheme textTheme = Theme.of(context).textTheme;
     TextStyle? textButtonStyle = textTheme.headline4?.copyWith(
-      color: AppColors.black,
+      color: black,
       fontSize: responsiveSize(context, 30, 40, md: 36, sm: 32),
       height: 2.0,
     );
@@ -104,9 +104,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       onLoadingAnimationDone: () {
         _slideTextController.forward();
       },
-      customLoadingAnimation: LoadingHomePageAnimation(
-        text: DEV_NAME,
-        style: textTheme.headline4!.copyWith(color: AppColors.white),
+      customLoadingAnimation: CustomLoadingAnimation(
+        text: MY_NAME,
+        style: textTheme.headline4!.copyWith(color: white),
         onLoadingDone: () {
           _slideTextController.forward();
         },
@@ -142,7 +142,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                     controller: _recentWorksController,
                     text: CRAFTED_WITH_LOVE,
                     textStyle: textTheme.headline4?.copyWith(
-                      color: AppColors.black,
+                      color: black,
                       fontSize: responsiveSize(context, 30, 48, md: 40, sm: 36),
                       height: 2.0,
                     ),
@@ -270,7 +270,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
             imageUrl: data[index].image,
             projectItemheight: projectHeight.toDouble(),
             subheight: subHeight.toDouble(),
-            backgroundColor: AppColors.accentColor2.withOpacity(0.35),
+            backgroundColor: accentColor2.withOpacity(0.35),
             title: data[index].title.toLowerCase(),
             subtitle: data[index].category,
             containerColor: data[index].primaryColor,

@@ -7,7 +7,7 @@ import 'package:portfolio/presentation/widgets/content_area.dart';
 import 'package:portfolio/presentation/widgets/content_builder.dart';
 import 'package:portfolio/presentation/widgets/custom_spacer.dart';
 import 'package:portfolio/presentation/widgets/page_wrapper.dart';
-import 'package:portfolio/presentation/widgets/spaces.dart';
+import 'package:portfolio/const/spaces.dart';
 import 'package:portfolio/values/values.dart';
 import 'package:flutter/material.dart';
 import 'package:visibility_detector/visibility_detector.dart';
@@ -138,7 +138,7 @@ class _ExperiencePageState extends State<ExperiencePage>
   }) {
     final TextTheme textTheme = Theme.of(context).textTheme;
     TextStyle? defaultTitleStyle = textTheme.subtitle1?.copyWith(
-      color: AppColors.black,
+      color: black,
       fontSize: responsiveSize(
         context,
         Sizes.TEXT_SIZE_18,
@@ -217,7 +217,7 @@ class _ExperiencePageState extends State<ExperiencePage>
         Sizes.TEXT_SIZE_16,
         17,
       ),
-      color: AppColors.grey750,
+      color: grey750,
       fontWeight: FontWeight.w300,
       height: 1.5,
       // letterSpacing: 2,
@@ -231,7 +231,7 @@ class _ExperiencePageState extends State<ExperiencePage>
           children: [
             Icon(
               Icons.play_arrow_outlined,
-              color: AppColors.black,
+              color: black,
               size: 12,
             ),
             SpaceW8(),

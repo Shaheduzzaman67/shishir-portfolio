@@ -22,7 +22,7 @@ part of values;
   // Home Page
   const String HI = "Hi,";
   const String DEV_INTRO = "I'm David.";
-  const String DEV_TITLE = "Software Engineer.";
+  const String DEV_TITLE = "Md. Shaheduzzaman";
   const String DEV_DESC = "Full Stack Developer / Flutter Expert";
   const String SEE_MY_WORKS = "See my works";
   const String SCROLL_DOWN = "Scroll Down";
@@ -46,7 +46,7 @@ part of values;
   const String MESSAGE_ERROR_MSG =
       "* Please enter something to send this form";
   const String SEND_MESSAGE = "Send Message";
-  const String COPYRIGHT = "©  2021  Built by  $DEV_NAME,";
+  const String COPYRIGHT = "©  2021  Built by  $MY_NAME,";
   const String DESIGNED_BY = "Designed by Julius G.";
   const String DESIGN_LINK =
       "https://www.behance.net/gallery/63574251/Personal-Portfolio-Website-Design";
@@ -122,8 +122,8 @@ part of values;
 
   const String PROJECT_NAME = "Project Name";
 
-  const String INTRO = "Hi, my name is";
-  const String DEV_NAME = "David Cobbina";
+  const String INTRO = "Hello, my name is";
+  const String MY_NAME = "Md. Shaheduzzaman";
   const String PUNCH_LINE = "I build things with flutter";
   const String SPECIALITY = "FLUTTER DEV";
   const String DESIGNED_IN = "Made in Ghana with ";

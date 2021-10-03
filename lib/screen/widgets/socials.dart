@@ -1,5 +1,5 @@
 import 'package:portfolio/core/utils/functions.dart';
-import 'package:portfolio/presentation/widgets/spaces.dart';
+import 'package:portfolio/const/spaces.dart';
 import 'package:portfolio/values/values.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +13,7 @@ class SocialData {
     required this.name,
     required this.iconData,
     required this.url,
-    this.color = AppColors.white,
+    this.color = white,
   });
 }
 
@@ -22,7 +22,7 @@ class Socials extends StatelessWidget {
     Key? key,
     required this.socialData,
     this.size = Sizes.ICON_SIZE_18,
-    this.color = AppColors.white,
+    this.color = white,
     this.spacing = Sizes.SIZE_40,
     this.runSpacing = Sizes.SIZE_16,
     this.isHorizontal = true,

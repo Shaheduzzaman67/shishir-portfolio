@@ -4,7 +4,7 @@ import 'package:portfolio/screen/widgets/socials.dart';
 import 'package:portfolio/presentation/widgets/app_logo.dart';
 import 'package:portfolio/presentation/widgets/nav_item.dart';
 import 'package:portfolio/presentation/widgets/page_wrapper.dart';
-import 'package:portfolio/presentation/widgets/spaces.dart';
+import 'package:portfolio/const/spaces.dart';
 import 'package:portfolio/values/values.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
@@ -14,7 +14,7 @@ class AppDrawer extends StatefulWidget {
     required this.menuList,
     required this.selectedItemRouteName,
     required this.controller,
-    this.color = AppColors.black,
+    this.color = black,
     this.width,
     this.onClose,
   });
@@ -80,7 +80,7 @@ class _AppDrawerState extends State<AppDrawer>
   Widget build(BuildContext context) {
     TextTheme textTheme = Theme.of(context).textTheme;
     TextStyle? style = textTheme.bodyText1?.copyWith(
-      color: AppColors.grey500,
+      color: grey500,
       fontSize: Sizes.TEXT_SIZE_10,
     );
     return Container(
@@ -102,7 +102,7 @@ class _AppDrawerState extends State<AppDrawer>
                       children: [
                         AppBarLogo(
                           fontSize: Sizes.TEXT_SIZE_40,
-                          titleColor: AppColors.accentColor,
+                          titleColor: accentColor,
                         ),
                         Spacer(),
                         InkWell(
@@ -113,7 +113,7 @@ class _AppDrawerState extends State<AppDrawer>
                           child: Icon(
                             FeatherIcons.x,
                             size: Sizes.ICON_SIZE_30,
-                            color: AppColors.accentColor,
+                            color: accentColor,
                           ),
                         ),
                       ],

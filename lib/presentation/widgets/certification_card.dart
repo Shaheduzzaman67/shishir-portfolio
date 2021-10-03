@@ -1,5 +1,5 @@
 import 'package:portfolio/presentation/widgets/empty.dart';
-import 'package:portfolio/presentation/widgets/spaces.dart';
+import 'package:portfolio/const/spaces.dart';
 import 'package:portfolio/values/values.dart';
 import 'package:flutter/material.dart';
 
@@ -15,7 +15,7 @@ class CertificationCard extends StatefulWidget {
     this.height = 400,
     this.elevation,
     this.shadow,
-    this.hoverColor = AppColors.accentColor,
+    this.hoverColor = accentColor,
     this.titleTextStyle,
     this.subtitleTextStyle,
     this.actionTitleTextStyle,
@@ -135,9 +135,9 @@ class _CertificationCardState extends State<CertificationCard>
                           height: Sizes.HEIGHT_36,
                           hasIcon: false,
                           width: 80,
-                          buttonColor: AppColors.white,
-                          borderColor: AppColors.black,
-                          onHoverColor: AppColors.black,
+                          buttonColor: white,
+                          borderColor: black,
+                          onHoverColor: black,
                           title: widget.actionTitle.toUpperCase(),
                           onPressed: widget.onTap,
                         ),
@@ -176,7 +176,7 @@ class _CertificationCardState extends State<CertificationCard>
           textAlign: TextAlign.center,
           style: widget.titleTextStyle ??
               theme.textTheme.headline4?.copyWith(
-                color: AppColors.black,
+                color: black,
               ),
         ),
         SpaceH4(),
@@ -185,7 +185,7 @@ class _CertificationCardState extends State<CertificationCard>
           textAlign: TextAlign.center,
           style: widget.subtitleTextStyle ??
               theme.textTheme.bodyText1?.copyWith(
-                color: AppColors.black,
+                color: black,
                 fontSize: Sizes.TEXT_SIZE_16,
               ),
         ),
@@ -194,9 +194,9 @@ class _CertificationCardState extends State<CertificationCard>
           height: Sizes.HEIGHT_36,
           hasIcon: false,
           width: 80,
-          buttonColor: AppColors.white,
-          borderColor: AppColors.black,
-          onHoverColor: AppColors.black,
+          buttonColor: white,
+          borderColor: black,
+          onHoverColor: black,
           title: widget.actionTitle.toUpperCase(),
           onPressed: widget.onTap,
         ),

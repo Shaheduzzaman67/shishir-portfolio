@@ -5,7 +5,7 @@ class AppBarLogo extends StatelessWidget {
   const AppBarLogo({
     Key? key,
     this.title = "DC",
-    this.titleColor = AppColors.black,
+    this.titleColor = black,
     this.titleStyle,
     this.fontSize = 60,
   }) : super(key: key);

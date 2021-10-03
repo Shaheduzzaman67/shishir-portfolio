@@ -3,7 +3,7 @@ part of values;
 class Borders {
    static const UnderlineInputBorder primaryInputBorder = UnderlineInputBorder(
     borderSide: BorderSide(
-      color: AppColors.grey,
+      color: grey,
       width: Sizes.WIDTH_1,
       style: BorderStyle.solid,
     ),
@@ -11,7 +11,7 @@ class Borders {
 
   static const UnderlineInputBorder enabledBorder = UnderlineInputBorder(
     borderSide: BorderSide(
-      color: AppColors.grey, //AppColors.primaryColor,
+      color: grey, //primaryColor,
       width: Sizes.WIDTH_2,
       style: BorderStyle.solid,
     ),
@@ -19,7 +19,7 @@ class Borders {
 
   static const UnderlineInputBorder focusedBorder = UnderlineInputBorder(
     borderSide: BorderSide(
-      color: AppColors.black,
+      color: black,
       width: Sizes.WIDTH_2,
       style: BorderStyle.solid,
     ),

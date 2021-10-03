@@ -8,7 +8,7 @@ import 'package:portfolio/presentation/widgets/animated_positioned_text.dart';
 import 'package:portfolio/presentation/widgets/animated_positioned_widget.dart';
 import 'package:portfolio/presentation/widgets/animated_slide_transtion.dart';
 import 'package:portfolio/presentation/widgets/animated_text_slide_box_transition.dart';
-import 'package:portfolio/presentation/widgets/spaces.dart';
+import 'package:portfolio/const/spaces.dart';
 import 'package:portfolio/screen/works/works_screen.dart';
 import 'package:portfolio/values/values.dart';
 import 'package:flutter/material.dart';
@@ -43,10 +43,6 @@ class _HomeScreenHeaderState extends State<HomeScreenHeader>
       vsync: this,
       duration: Duration(milliseconds: 300),
     );
-    rotationController = AnimationController(
-      duration: const Duration(seconds: 20),
-      vsync: this,
-    )..repeat();
     controller = AnimationController(
       vsync: this,
       duration: Duration(milliseconds: 1500),
@@ -67,15 +63,7 @@ class _HomeScreenHeaderState extends State<HomeScreenHeader>
         controller.forward();
       }
     });
-    rotationController.addStatusListener((status) {
-      if (status == AnimationStatus.completed) {
-        rotationController.reset();
-        rotationController.forward();
-        // rotationController.reverse();
-      }
-    });
     controller.forward();
-    rotationController.forward();
     super.initState();
   }
 
@@ -83,7 +71,6 @@ class _HomeScreenHeaderState extends State<HomeScreenHeader>
   void dispose() {
     controller.dispose();
     scrollDownButtonController.dispose();
-    rotationController.dispose();
     super.dispose();
   }
 
@@ -128,7 +115,7 @@ class _HomeScreenHeaderState extends State<HomeScreenHeader>
 
     return Container(
       width: screenWidth,
-      color: AppColors.accentColor2.withOpacity(0.35),
+      color: accentColor2.withOpacity(0.35),
       child: Stack(
         children: [
           ResponsiveBuilder(builder: (context, sizingInformation) {
@@ -187,24 +174,9 @@ class _HomeScreenHeaderState extends State<HomeScreenHeader>
                   SizedBox(width: screenWidth * 0.05),
                   Container(
                     margin: imageMargin,
-                    child: AnimatedSlideTranstion(
-                      controller: controller,
-                      position: animation,
-                      child: Stack(
-                        children: [
-                          RotationTransition(
-                            turns: rotationController,
-                            child: Image.asset(
-                              ImagePath.DEV_SKILLS,
-                              width: screenWidth * 0.35,
-                            ),
-                          ),
-                          Image.asset(
-                            ImagePath.DEV_MEDITATE,
-                            width: screenWidth * 0.35,
-                          ),
-                        ],
-                      ),
+                    child: Image.asset(
+                      ImagePath.DEV_MEDITATE,
+                      width: screenWidth * 0.35,
                     ),
                   ),
                 ],
@@ -288,7 +260,7 @@ class _AboutDevState extends State<AboutDev> {
             width: widget.width,
             maxLines: 3,
             textStyle: textTheme.headline2?.copyWith(
-              color: AppColors.black,
+              color: black,
               fontSize: headerFontSize,
             ),
           ),
@@ -302,7 +274,7 @@ class _AboutDevState extends State<AboutDev> {
             width: widget.width,
             maxLines: 3,
             textStyle: textTheme.headline2?.copyWith(
-              color: AppColors.black,
+              color: black,
               fontSize: headerFontSize,
             ),
           ),
@@ -322,7 +294,7 @@ class _AboutDevState extends State<AboutDev> {
             ),
             maxLines: 3,
             textStyle: textTheme.headline2?.copyWith(
-              color: AppColors.black,
+              color: black,
               fontSize: headerFontSize,
             ),
           ),
@@ -352,8 +324,8 @@ class _AboutDevState extends State<AboutDev> {
           width: 200,
           height: 60,
           child: AnimatedBubbleButton(
-            color: AppColors.grey100,
-            imageColor: AppColors.black,
+            color: grey100,
+            imageColor: black,
             startOffset: Offset(0, 0),
             targetOffset: Offset(0.1, 0),
             targetWidth: 200,
@@ -362,7 +334,7 @@ class _AboutDevState extends State<AboutDev> {
             ),
             title: SEE_MY_WORKS.toUpperCase(),
             titleStyle: textTheme.bodyText1?.copyWith(
-              color: AppColors.black,
+              color: black,
               fontSize: responsiveSize(
                 context,
                 Sizes.TEXT_SIZE_14,
@@ -397,9 +369,9 @@ class _AboutDevState extends State<AboutDev> {
     required List<SocialData> data,
   }) {
     TextTheme textTheme = Theme.of(context).textTheme;
-    TextStyle? style = textTheme.bodyText1?.copyWith(color: AppColors.grey750);
+    TextStyle? style = textTheme.bodyText1?.copyWith(color: grey750);
     TextStyle? slashStyle = textTheme.bodyText1?.copyWith(
-      color: AppColors.grey750,
+      color: grey750,
       fontWeight: FontWeight.w400,
       fontSize: 18,
     );

@@ -1,17 +1,17 @@
 import 'package:portfolio/core/layout/adaptive.dart';
 import 'package:portfolio/core/utils/functions.dart';
 import 'package:portfolio/presentation/widgets/empty.dart';
-import 'package:portfolio/presentation/widgets/spaces.dart';
+import 'package:portfolio/const/spaces.dart';
 import 'package:portfolio/values/values.dart';
 import 'package:flutter/material.dart';
 
 const double lineHeight = 2;
-Color defaultLineColor = AppColors.accentColor2.withOpacity(0.35);
+Color defaultLineColor = accentColor2.withOpacity(0.35);
 
-class LoadingHomePageAnimation extends StatefulWidget {
+class CustomLoadingAnimation extends StatefulWidget {
   static const String loadingPageRoute = LOADING_PAGE;
 
-  LoadingHomePageAnimation({
+  CustomLoadingAnimation({
     Key? key,
     required this.text,
     required this.style,
@@ -24,11 +24,11 @@ class LoadingHomePageAnimation extends StatefulWidget {
   final Color? lineColor;
 
   @override
-  _LoadingHomePageAnimationState createState() =>
-      _LoadingHomePageAnimationState();
+  _CustomLoadingAnimationState createState() =>
+      _CustomLoadingAnimationState();
 }
 
-class _LoadingHomePageAnimationState extends State<LoadingHomePageAnimation>
+class _CustomLoadingAnimationState extends State<CustomLoadingAnimation>
     with TickerProviderStateMixin {
   late AnimationController _fadeOutController;
   late AnimationController _containerController;
@@ -151,7 +151,7 @@ class _LoadingHomePageAnimationState extends State<LoadingHomePageAnimation>
                 width: screenWidth,
                 height: _leftRightAnimationDone ? 0 : halfHeightOfScreen,
                 duration: _scaleDuration,
-                color: AppColors.black,
+                color: black,
                 onEnd: () {
                   widget.onLoadingDone();
                   setState(() {
@@ -165,7 +165,7 @@ class _LoadingHomePageAnimationState extends State<LoadingHomePageAnimation>
                   width: screenWidth,
                   height: _leftRightAnimationDone ? 0 : halfHeightOfScreen,
                   duration: _scaleDuration,
-                  color: AppColors.black,
+                  color: black,
                 ),
               ),
               Container(
@@ -223,7 +223,7 @@ class _LoadingHomePageAnimationState extends State<LoadingHomePageAnimation>
                                         ? 0
                                         : leftContainerStart,
                                     height: lineHeight,
-                                    color: AppColors.black,
+                                    color: black,
                                     duration: _leftRightContainerDuration,
                                     // curve: Curves.ease,
                                   ),
@@ -252,7 +252,7 @@ class _LoadingHomePageAnimationState extends State<LoadingHomePageAnimation>
                                         ? 0
                                         : widthOfRightLine,
                                     height: lineHeight,
-                                    color: AppColors.black,
+                                    color: black,
                                     duration: _leftRightContainerDuration,
                                     onEnd: () {},
                                   ),
@@ -273,7 +273,7 @@ class _LoadingHomePageAnimationState extends State<LoadingHomePageAnimation>
   Widget containerAnimationBuilder({
     required Animation<double> animation,
     required AnimationController controller,
-    Color color = AppColors.white,
+    Color color = white,
   }) {
     return AnimatedBuilder(
       animation: controller,

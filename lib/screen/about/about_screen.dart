@@ -10,7 +10,7 @@ import 'package:portfolio/presentation/widgets/content_area.dart';
 import 'package:portfolio/presentation/widgets/content_builder.dart';
 import 'package:portfolio/presentation/widgets/custom_spacer.dart';
 import 'package:portfolio/presentation/widgets/page_wrapper.dart';
-import 'package:portfolio/presentation/widgets/spaces.dart';
+import 'package:portfolio/const/spaces.dart';
 import 'package:portfolio/screen/about/widgets/about_header_screen.dart';
 import 'package:portfolio/screen/about/widgets/technology_section_screen.dart';
 import 'package:portfolio/values/values.dart';
@@ -107,15 +107,15 @@ class _AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
     TextTheme textTheme = Theme.of(context).textTheme;
     TextStyle? bodyText1Style = textTheme.bodyText1?.copyWith(
       fontSize: Sizes.TEXT_SIZE_18,
-      color: AppColors.grey750,
+      color: grey750,
       fontWeight: FontWeight.w400,
       height: 2.0,
       // letterSpacing: 2,
     );
     TextStyle? bodyText2Style =
-        textTheme.bodyText1?.copyWith(color: AppColors.grey750);
+        textTheme.bodyText1?.copyWith(color: grey750);
     TextStyle? titleStyle = textTheme.subtitle1?.copyWith(
-      color: AppColors.black,
+      color: black,
       fontSize: responsiveSize(
         context,
         Sizes.TEXT_SIZE_16,
@@ -342,7 +342,7 @@ class _AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
                                 md: Sizes.TEXT_SIZE_16,
                               ),
                               fontWeight: FontWeight.w400,
-                              color: AppColors.grey600,
+                              color: grey600,
                             ),
                           ),
                         ),
@@ -363,9 +363,9 @@ class _AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
 
   List<Widget> _buildSocials(List<SocialData> data) {
     TextTheme textTheme = Theme.of(context).textTheme;
-    TextStyle? style = textTheme.bodyText1?.copyWith(color: AppColors.grey750);
+    TextStyle? style = textTheme.bodyText1?.copyWith(color: grey750);
     TextStyle? slashStyle = textTheme.bodyText1?.copyWith(
-      color: AppColors.grey750,
+      color: grey750,
       fontWeight: FontWeight.w400,
       fontSize: 18,
     );

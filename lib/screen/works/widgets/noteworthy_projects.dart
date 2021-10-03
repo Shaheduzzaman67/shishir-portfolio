@@ -3,7 +3,7 @@ import 'package:portfolio/core/utils/functions.dart';
 import 'package:portfolio/presentation/widgets/animated_line_through_text.dart';
 import 'package:portfolio/presentation/widgets/animated_positioned_text.dart';
 import 'package:portfolio/presentation/widgets/animated_text_slide_box_transition.dart';
-import 'package:portfolio/presentation/widgets/spaces.dart';
+import 'package:portfolio/const/spaces.dart';
 import 'package:portfolio/values/values.dart';
 import 'package:flutter/material.dart';
 import 'package:visibility_detector/visibility_detector.dart';
@@ -38,7 +38,7 @@ class _NoteWorthyProjectsState extends State<NoteWorthyProjects>
   Widget build(BuildContext context) {
     TextTheme textTheme = Theme.of(context).textTheme;
     TextStyle? titleStyle = textTheme.subtitle1?.copyWith(
-      color: AppColors.black,
+      color: black,
       fontSize: responsiveSize(
         context,
         Sizes.TEXT_SIZE_20,
@@ -51,7 +51,7 @@ class _NoteWorthyProjectsState extends State<NoteWorthyProjects>
         Sizes.TEXT_SIZE_16,
         Sizes.TEXT_SIZE_18,
       ),
-      color: AppColors.grey750,
+      color: grey750,
       fontWeight: FontWeight.w400,
       height: 2.0,
       // letterSpacing: 2,
@@ -151,12 +151,12 @@ class NoteWorthyProjectItem extends StatelessWidget {
     TextTheme textTheme = Theme.of(context).textTheme;
     TextStyle? defaultNumberStyle = textTheme.subtitle1?.copyWith(
       fontSize: Sizes.TEXT_SIZE_16,
-      color: AppColors.grey550,
+      color: grey550,
       fontWeight: FontWeight.w400,
     );
     TextStyle? defaultSourceStyle = textTheme.subtitle1?.copyWith(
       fontSize: Sizes.TEXT_SIZE_16,
-      color: AppColors.grey700,
+      color: grey700,
       fontWeight: FontWeight.w400,
       decoration: TextDecoration.underline,
     );
@@ -167,7 +167,7 @@ class NoteWorthyProjectItem extends StatelessWidget {
         Sizes.TEXT_SIZE_20,
         sm: Sizes.TEXT_SIZE_18,
       ),
-      color: AppColors.black,
+      color: black,
       fontWeight: FontWeight.w500,
     );
     return Container(

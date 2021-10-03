@@ -60,7 +60,7 @@ class _PageHeaderState extends State<PageHeader>
   Widget build(BuildContext context) {
     TextTheme textTheme = Theme.of(context).textTheme;
     TextStyle? headingStyle = textTheme.headline2?.copyWith(
-      color: AppColors.black,
+      color: black,
       fontSize: responsiveSize(
         context,
         Sizes.TEXT_SIZE_40,

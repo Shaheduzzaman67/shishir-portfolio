@@ -1,7 +1,7 @@
 import 'package:portfolio/core/layout/adaptive.dart';
 import 'package:portfolio/presentation/widgets/animated_bubble_button.dart';
 import 'package:portfolio/presentation/widgets/project_item.dart';
-import 'package:portfolio/presentation/widgets/spaces.dart';
+import 'package:portfolio/const/spaces.dart';
 import 'package:portfolio/values/values.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
@@ -74,7 +74,7 @@ class _NextProjectState extends State<NextProject>
       Radius.circular(100.0),
     );
     TextStyle? buttonStyle = textTheme.bodyText1?.copyWith(
-      color: AppColors.black,
+      color: black,
       fontSize: responsiveSize(
         context,
         Sizes.TEXT_SIZE_14,
@@ -84,7 +84,7 @@ class _NextProjectState extends State<NextProject>
       fontWeight: FontWeight.w500,
     );
     TextStyle? projectTitleStyle = textTheme.subtitle1?.copyWith(
-      color: AppColors.black,
+      color: black,
       fontSize: projectTitleFontSize,
     );
     return ResponsiveBuilder(
@@ -123,8 +123,8 @@ class _NextProjectState extends State<NextProject>
                 SpaceH30(),
                 AnimatedBubbleButton(
                   title: VIEW_PROJECT,
-                  color: AppColors.grey100,
-                  imageColor: AppColors.black,
+                  color: grey100,
+                  imageColor: black,
                   startBorderRadius: borderRadius,
                   titleStyle: buttonStyle,
                   startOffset: Offset(0, 0),
@@ -198,7 +198,7 @@ class _NextProjectState extends State<NextProject>
                                                 textAlign: TextAlign.center,
                                                 style:
                                                     projectTitleStyle?.copyWith(
-                                                  color: AppColors.white,
+                                                  color: white,
                                                   fontSize:
                                                       projectTitleFontSize -
                                                           0.25,
@@ -213,8 +213,8 @@ class _NextProjectState extends State<NextProject>
                       SpaceH20(),
                       AnimatedBubbleButton(
                         title: VIEW_PROJECT,
-                        color: AppColors.grey100,
-                        imageColor: AppColors.black,
+                        color: grey100,
+                        imageColor: black,
                         startBorderRadius: borderRadius,
                         titleStyle: buttonStyle,
                         startOffset: Offset(0, 0),

@@ -89,56 +89,56 @@ double assignWidth(
 
 double responsiveSize(
   BuildContext context,
-  double xs,
-  double lg, {
-  double? sm,
-  double? md,
-  double? xl,
+  double extraSmall,
+  double large, {
+  double? small,
+  double? medium,
+  double? extraLarge,
 }) {
   return context.layout.value(
-    xs: xs,
-    sm: sm ?? (md ?? xs), //assign md to sm if it is not null, if null assign xs
-    md: md ?? lg,
-    lg: lg,
-    xl: xl ?? lg,
+    xs: extraSmall,
+    sm: small ?? (medium ?? extraSmall), //assign md to sm if it is not null, if null assign xs
+    md: medium ?? large,
+    lg: large,
+    xl: extraLarge ?? large,
   );
 }
 
 int responsiveSizeInt(
   BuildContext context,
-  int xs,
-  int lg, {
-  int? sm,
-  int? md,
-  int? xl,
+  int extraSmall,
+  int large, {
+  int? small,
+  int? medium,
+  int? extraLarge,
 }) {
   return context.layout.value(
-    xs: xs,
-    sm: sm ?? (md ?? xs), //assign md to sm if it is not null, if null assign xs
-    md: md ?? lg,
-    lg: lg,
-    xl: xl ?? lg,
+    xs: extraSmall,
+    sm: small ?? (medium ?? extraSmall), //assign md to sm if it is not null, if null assign xs
+    md: medium ?? large,
+    lg: large,
+    xl: extraLarge ?? large,
   );
 }
 
 Color responsiveColor(
   BuildContext context,
-  Color xs,
-  Color lg, {
-  Color? sm,
-  Color? md,
-  Color? xl,
+  Color extraSmall,
+  Color large, {
+  Color? small,
+  Color? medium,
+  Color? extraLarge,
 }) {
   return context.layout.value(
-    xs: xs,
-    sm: sm ?? (md ?? xs), //assign md to sm if it is not null, if null assign xs
-    md: md ?? lg,
-    lg: lg,
-    xl: xl ?? lg,
+    xs: extraSmall,
+    sm: small ?? (medium ?? extraSmall), //assign md to sm if it is not null, if null assign xs
+    md: medium ?? large,
+    lg: large,
+    xl: extraLarge ?? large,
   );
 }
 
 double getSidePadding(BuildContext context) {
   double sidePadding = assignWidth(context, 0.05);
-  return responsiveSize(context, 30, sidePadding, md: sidePadding);
+  return responsiveSize(context, 30, sidePadding, medium: sidePadding);
 }

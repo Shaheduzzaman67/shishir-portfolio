@@ -1,4 +1,4 @@
-import 'package:portfolio/core/layout/adaptive.dart';
+import 'package:portfolio/const/adaptive.dart';
 import 'package:portfolio/presentation/widgets/animated_text_slide_box_transition.dart';
 import 'package:portfolio/presentation/widgets/content_area.dart';
 import 'package:portfolio/const/spaces.dart';
@@ -22,13 +22,13 @@ class AboutHeader extends StatelessWidget {
       context,
       width * 0.15,
       width * 0.15,
-      md: width * 0.05,
+      medium: width * 0.05,
     );
     double imageWidthLg = responsiveSize(
       context,
       width * 0.3,
       width * 0.3,
-      md: width * 0.4,
+      medium: width * 0.4,
     );
     return ResponsiveBuilder(
       builder: (context, sizingInformation) {
@@ -99,7 +99,7 @@ class AboutDescription extends StatelessWidget {
   Widget build(BuildContext context) {
     TextTheme textTheme = Theme.of(context).textTheme;
     TextStyle? style = textTheme.bodyText1?.copyWith(
-      fontSize: responsiveSize(context, 30, 44, md: 34),
+      fontSize: responsiveSize(context, 30, 44, medium: 34),
       height: 1.2,
       fontWeight: FontWeight.w200,
     );

@@ -1,4 +1,4 @@
-import 'package:portfolio/core/layout/adaptive.dart';
+import 'package:portfolio/const/adaptive.dart';
 import 'package:portfolio/core/utils/functions.dart';
 import 'package:portfolio/screen/widgets/scroll_down.dart';
 import 'package:portfolio/screen/widgets/socials.dart';
@@ -13,6 +13,7 @@ import 'package:portfolio/screen/works/works_screen.dart';
 import 'package:portfolio/values/values.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
+import 'package:animated_text_kit/animated_text_kit.dart';
 
 const kDuration = Duration(milliseconds: 600);
 
@@ -32,7 +33,6 @@ class HomeScreenHeader extends StatefulWidget {
 class _HomeScreenHeaderState extends State<HomeScreenHeader>
     with TickerProviderStateMixin {
   late AnimationController controller;
-  late AnimationController rotationController;
   late AnimationController scrollDownButtonController;
   late Animation<Offset> animation;
   late Animation<Offset> scrollDownBtnAnimation;
@@ -83,13 +83,13 @@ class _HomeScreenHeaderState extends State<HomeScreenHeader>
         context,
         20,
         screenWidth * 0.15,
-        sm: screenWidth * 0.15,
+        small: screenWidth * 0.15,
       ),
       top: responsiveSize(
         context,
         60,
         screenHeight * 0.35,
-        sm: screenHeight * 0.35,
+        small: screenHeight * 0.35,
       ),
       bottom: responsiveSize(context, 20, 40),
     );
@@ -102,13 +102,13 @@ class _HomeScreenHeaderState extends State<HomeScreenHeader>
         context,
         20,
         screenWidth * 0.05,
-        sm: screenWidth * 0.05,
+        small: screenWidth * 0.05,
       ),
       top: responsiveSize(
         context,
         30,
         screenHeight * 0.25,
-        sm: screenHeight * 0.25,
+        small: screenHeight * 0.25,
       ),
       bottom: responsiveSize(context, 20, 40),
     );
@@ -125,23 +125,11 @@ class _HomeScreenHeaderState extends State<HomeScreenHeader>
                 children: [
                   Container(
                     padding: padding,
-                    child: AnimatedSlideTranstion(
-                      controller: controller,
-                      position: animation,
-                      child: Stack(
-                        children: [
-                          RotationTransition(
-                            turns: rotationController,
-                            child: Image.asset(
-                              ImagePath.DEV_SKILLS,
-                              width: screenWidth,
-                            ),
-                          ),
-                          Image.asset(
-                            ImagePath.DEV_MEDITATE,
-                            width: screenWidth,
-                          ),
-                        ],
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.all(Radius.circular(50)),
+                      child: Image.asset(
+                        ImagePath.DEV_SHISHIR,
+                        //width: screenWidth,
                       ),
                     ),
                   ),
@@ -174,9 +162,12 @@ class _HomeScreenHeaderState extends State<HomeScreenHeader>
                   SizedBox(width: screenWidth * 0.05),
                   Container(
                     margin: imageMargin,
-                    child: Image.asset(
-                      ImagePath.DEV_MEDITATE,
-                      width: screenWidth * 0.35,
+                    child: ClipRRect(
+                      child: Image.asset(
+                        ImagePath.DEV_SHISHIR,
+                        width: screenWidth * 0.35,
+                      ),
+                      borderRadius: BorderRadius.all(Radius.circular(50)),
                     ),
                   ),
                 ],
@@ -248,7 +239,7 @@ class _AboutDevState extends State<AboutDev> {
       parent: widget.controller,
       curve: Interval(0.6, 1.0, curve: Curves.fastOutSlowIn),
     );
-    double headerFontSize = responsiveSize(context, 28, 48, md: 36, sm: 32);
+    double headerFontSize = responsiveSize(context, 28, 48, medium: 36, small: 32);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -289,64 +280,58 @@ class _AboutDevState extends State<AboutDev> {
               context,
               widget.width * 0.75,
               widget.width,
-              md: widget.width,
-              sm: widget.width,
+              medium: widget.width,
+              small: widget.width,
             ),
             maxLines: 3,
             textStyle: textTheme.headline2?.copyWith(
-              color: black,
+              color: roamAppLogo,
               fontSize: headerFontSize,
             ),
           ),
         ),
         SpaceH30(),
-        Container(
-          margin: margin,
-          child: AnimatedPositionedText(
-            controller: curvedAnimation,
-            width: widget.width,
-            maxLines: 2,
-            text: DEV_DESC,
-            textStyle: textTheme.bodyText1?.copyWith(
-              fontSize: responsiveSize(
-                context,
-                Sizes.TEXT_SIZE_16,
-                Sizes.TEXT_SIZE_18,
-              ),
-              height: 2,
-              fontWeight: FontWeight.w400,
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Icon(
+              Icons.play_arrow_rounded,
+              color: PrimaryRed,
             ),
-          ),
+            TyperAnimatedTextKit(
+                isRepeatingAnimation: true,
+                speed: Duration(milliseconds: 50),
+                textStyle: textTheme.bodyText1?.copyWith(
+                  fontSize: responsiveSize(
+                    context,
+                    Sizes.TEXT_SIZE_16,
+                    Sizes.TEXT_SIZE_18,
+                  ),
+                  fontWeight: FontWeight.w400,
+                ),
+                text: [
+                  DEV_DESC1,
+                  DEV_DESC2,
+                ]),
+          ],
         ),
         SpaceH30(),
-        AnimatedPositionedWidget(
-          controller: curvedAnimation,
-          width: 200,
-          height: 60,
-          child: AnimatedBubbleButton(
-            color: grey100,
-            imageColor: black,
-            startOffset: Offset(0, 0),
-            targetOffset: Offset(0.1, 0),
-            targetWidth: 200,
-            startBorderRadius: const BorderRadius.all(
-              Radius.circular(100.0),
+        CircularButton(
+          title: SEE_MY_WORKS.toUpperCase(),
+          titleStyle: textTheme.bodyText1?.copyWith(
+            color: white,
+            fontSize: responsiveSize(
+              context,
+              Sizes.TEXT_SIZE_14,
+              Sizes.TEXT_SIZE_16,
+              small: Sizes.TEXT_SIZE_15,
             ),
-            title: SEE_MY_WORKS.toUpperCase(),
-            titleStyle: textTheme.bodyText1?.copyWith(
-              color: black,
-              fontSize: responsiveSize(
-                context,
-                Sizes.TEXT_SIZE_14,
-                Sizes.TEXT_SIZE_16,
-                sm: Sizes.TEXT_SIZE_15,
-              ),
-              fontWeight: FontWeight.w500,
-            ),
-            onTap: () {
-              Navigator.pushNamed(context, WorksPage.worksPageRoute);
-            },
+            fontWeight: FontWeight.w500,
           ),
+          targetWidth: 200,
+          onTap: () {
+            Navigator.pushNamed(context, WorksPage.worksPageRoute);
+          },
         ),
         SpaceH40(),
         Container(

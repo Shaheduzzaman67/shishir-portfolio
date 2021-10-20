@@ -1,7 +1,7 @@
-import 'package:portfolio/core/layout/adaptive.dart';
+import 'package:portfolio/const/adaptive.dart';
 import 'package:portfolio/screen/home/home_screen.dart';
 import 'package:portfolio/screen/widgets/socials.dart';
-import 'package:portfolio/presentation/widgets/app_logo.dart';
+import 'package:portfolio/screen/widgets/app_logo.dart';
 import 'package:portfolio/presentation/widgets/nav_item.dart';
 import 'package:portfolio/presentation/widgets/page_wrapper.dart';
 import 'package:portfolio/const/spaces.dart';

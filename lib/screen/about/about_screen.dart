@@ -1,7 +1,7 @@
-import 'package:portfolio/core/layout/adaptive.dart';
+import 'package:portfolio/const/adaptive.dart';
 import 'package:portfolio/core/utils/functions.dart';
 
-import 'package:portfolio/screen/widgets/animated_footer.dart';
+import 'package:portfolio/screen/widgets/footer.dart';
 import 'package:portfolio/screen/widgets/socials.dart';
 import 'package:portfolio/presentation/widgets/animated_line_through_text.dart';
 import 'package:portfolio/presentation/widgets/animated_positioned_text.dart';
@@ -82,7 +82,7 @@ class _AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
       context,
       assignWidth(context, 0.8),
       assignWidth(context, 0.75),
-      sm: assignWidth(context, 0.8),
+      small: assignWidth(context, 0.8),
     );
     EdgeInsetsGeometry padding = EdgeInsets.only(
       left: responsiveSize(
@@ -165,7 +165,7 @@ class _AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
                       double visiblePercentage =
                           visibilityInfo.visibleFraction * 100;
                       if (visiblePercentage >
-                          responsiveSize(context, 40, 70, md: 50)) {
+                          responsiveSize(context, 40, 70, medium: 50)) {
                         _storyController.forward();
                       }
                     },
@@ -323,7 +323,7 @@ class _AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
                               context,
                               Sizes.TEXT_SIZE_24,
                               Sizes.TEXT_SIZE_36,
-                              md: Sizes.TEXT_SIZE_28,
+                              medium: Sizes.TEXT_SIZE_28,
                             ),
                             height: 2.0,
                           ),
@@ -339,7 +339,7 @@ class _AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
                                 context,
                                 Sizes.TEXT_SIZE_16,
                                 Sizes.TEXT_SIZE_18,
-                                md: Sizes.TEXT_SIZE_16,
+                                medium: Sizes.TEXT_SIZE_16,
                               ),
                               fontWeight: FontWeight.w400,
                               color: grey600,
@@ -355,7 +355,7 @@ class _AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
             ),
           ),
           // SlidingBanner(),
-          AnimatedFooter()
+          Footer()
         ],
       ),
     );

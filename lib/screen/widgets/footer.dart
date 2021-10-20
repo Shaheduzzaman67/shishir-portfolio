@@ -1,4 +1,4 @@
-import 'package:portfolio/core/layout/adaptive.dart';
+import 'package:portfolio/const/adaptive.dart';
 import 'package:portfolio/screen/widgets/simple_footer.dart';
 import 'package:portfolio/presentation/widgets/animated_bubble_button.dart';
 import 'package:portfolio/presentation/widgets/animated_positioned_text.dart';
@@ -11,23 +11,19 @@ import 'package:visibility_detector/visibility_detector.dart';
 
 import '../contact/contact_page.dart';
 
-class AnimatedFooter extends StatefulWidget {
-  const AnimatedFooter({
+class Footer extends StatefulWidget {
+  const Footer({
     Key? key,
-    this.height,
-    this.width,
-    this.backgroundColor = black,
+    this.backgroundColor = grey600,
   }) : super(key: key);
 
-  final double? width;
-  final double? height;
   final Color backgroundColor;
 
   @override
-  _AnimatedFooterState createState() => _AnimatedFooterState();
+  _FooterState createState() => _FooterState();
 }
 
-class _AnimatedFooterState extends State<AnimatedFooter>
+class _FooterState extends State<Footer>
     with SingleTickerProviderStateMixin {
   late AnimationController controller;
 
@@ -60,18 +56,18 @@ class _AnimatedFooterState extends State<AnimatedFooter>
         context,
         Sizes.TEXT_SIZE_30,
         Sizes.TEXT_SIZE_60,
-        md: Sizes.TEXT_SIZE_50,
+        medium: Sizes.TEXT_SIZE_50,
       ),
     );
     TextStyle? subtitleStyle = style?.copyWith(
-      color: grey550,
+      color: white,
       fontSize: Sizes.TEXT_SIZE_18,
       fontWeight: FontWeight.w400,
     );
 
     return Container(
-      width: widget.width ?? widthOfScreen(context),
-      height: widget.height ?? assignHeight(context, 0.8),
+      height: 450,
+      padding: EdgeInsets.only(top: 20, bottom: 20),
       color: widget.backgroundColor,
       child: VisibilityDetector(
         key: Key('animated-footer'),
@@ -87,28 +83,8 @@ class _AnimatedFooterState extends State<AnimatedFooter>
             Spacer(flex: 2),
             Container(
               height: circleImageSize,
-              child: Stack(
+              child: Column(
                 children: [
-                  Positioned(
-                    right: responsiveSize(
-                      context,
-                      assignWidth(context, 0.2),
-                      assignWidth(context, 0.3),
-                      md: assignWidth(context, 0.2),
-                    ),
-                    child: AnimatedPositionedWidget(
-                      controller: CurvedAnimation(
-                        parent: controller,
-                        curve: Curves.fastOutSlowIn,
-                      ),
-                      width: circleImageSize,
-                      height: circleImageSize,
-                      child: Image.asset(
-                        ImagePath.CIRCLE,
-                        color: white,
-                      ),
-                    ),
-                  ),
                   Center(
                     child: AnimatedPositionedText(
                       text: WORK_TOGETHER,
@@ -126,7 +102,7 @@ class _AnimatedFooterState extends State<AnimatedFooter>
             ),
             Spacer(),
             AnimatedPositionedText(
-              text: AVAILABLE_FOR_FREELANCE,
+              text: AVAILABLE_FOR_JOB,
               textAlign: TextAlign.center,
               textStyle: subtitleStyle,
               factor: 2.0,
@@ -136,8 +112,8 @@ class _AnimatedFooterState extends State<AnimatedFooter>
               ),
             ),
             SpaceH40(),
-            AnimatedBubbleButton(
-              title: SAY_HELLO.toUpperCase(),
+            CircularButton(
+              title: SAY_HI,
               onTap: () {
                 Navigator.pushNamed(context, ContactPage.contactPageRoute);
               },

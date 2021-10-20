@@ -1,4 +1,4 @@
-import 'package:portfolio/core/layout/adaptive.dart';
+import 'package:portfolio/const/adaptive.dart';
 import 'package:portfolio/values/values.dart';
 import 'package:flutter/material.dart';
 
@@ -170,7 +170,7 @@ class _NavItemState extends State<NavItem> {
       context,
       Sizes.TEXT_SIZE_14,
       Sizes.TEXT_SIZE_16,
-      md: Sizes.TEXT_SIZE_15,
+      medium: Sizes.TEXT_SIZE_15,
     );
     TextStyle? defaultSelectedItemStyle = textTheme.bodyText1?.copyWith(
       fontSize: textSize,

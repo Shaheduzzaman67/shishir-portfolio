@@ -1,5 +1,5 @@
-import 'package:portfolio/core/layout/adaptive.dart';
-import 'package:portfolio/screen/widgets/animated_footer.dart';
+import 'package:portfolio/const/adaptive.dart';
+import 'package:portfolio/screen/widgets/footer.dart';
 import 'package:portfolio/screen/widgets/page_header.dart';
 import 'package:portfolio/presentation/widgets/animated_positioned_text.dart';
 import 'package:portfolio/presentation/widgets/animated_text_slide_box_transition.dart';
@@ -76,7 +76,7 @@ class _ExperiencePageState extends State<ExperiencePage>
       context,
       assignWidth(context, 0.8),
       assignWidth(context, 0.75),
-      sm: assignWidth(context, 0.8),
+      small: assignWidth(context, 0.8),
     );
     EdgeInsetsGeometry padding = EdgeInsets.only(
       left: responsiveSize(
@@ -126,7 +126,7 @@ class _ExperiencePageState extends State<ExperiencePage>
               ),
             ),
           ),
-          AnimatedFooter(),
+          Footer(),
         ],
       ),
     );

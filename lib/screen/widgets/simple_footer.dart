@@ -1,4 +1,4 @@
-import 'package:portfolio/core/layout/adaptive.dart';
+import 'package:portfolio/const/adaptive.dart';
 import 'package:portfolio/core/utils/functions.dart';
 import 'package:portfolio/screen/widgets/socials.dart';
 import 'package:portfolio/presentation/widgets/animated_line_through_text.dart';
@@ -98,7 +98,7 @@ class SimpleFooterSm extends StatelessWidget {
           ],
         ),
         SpaceH8(),
-        BuiltWithFlutter(),
+        DevelopedWithFlutter(),
       ],
     );
   }
@@ -149,14 +149,14 @@ class SimpleFooterLg extends StatelessWidget {
           ],
         ),
         SpaceH8(),
-        BuiltWithFlutter(),
+        DevelopedWithFlutter(),
       ],
     );
   }
 }
 
-class BuiltWithFlutter extends StatelessWidget {
-  const BuiltWithFlutter({Key? key}) : super(key: key);
+class DevelopedWithFlutter extends StatelessWidget {
+  const DevelopedWithFlutter({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -171,19 +171,10 @@ class BuiltWithFlutter extends StatelessWidget {
       textBaseline: TextBaseline.alphabetic,
       children: [
         Text(
-          BUILT_WITH_FLUTTER,
+          DEVELOPED_WITH_FLUTTER,
           style: style,
         ),
         FlutterLogo(size: 14),
-        Text(
-          " with ",
-          style: style,
-        ),
-        Icon(
-          FontAwesomeIcons.solidHeart,
-          size: 14,
-          color: errorRed,
-        )
       ],
     );
   }

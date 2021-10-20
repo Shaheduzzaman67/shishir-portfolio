@@ -21,13 +21,14 @@ part of values;
 
   // Home Page
   const String HI = "Hi,";
-  const String DEV_INTRO = "I'm David.";
-  const String DEV_TITLE = "Md. Shaheduzzaman";
-  const String DEV_DESC = "Full Stack Developer / Flutter Expert";
+  const String DEV_INTRO = "I'm Md. Shaheduzzaman";
+  const String DEV_TITLE = "Mobile App Developer";
+  const String DEV_DESC1 = "Flutter Developer";
+  const String DEV_DESC2 = "UI/UX Enthusiast";
   const String SEE_MY_WORKS = "See my works";
   const String SCROLL_DOWN = "Scroll Down";
-  const String CRAFTED_WITH_LOVE = "Crafted with love.";
-  const String SELECTION = "Here is selection of my recent works.";
+  const String PROGRAMMING_QOUTE = "Solve the problem. Then, write code";
+  const String SELECTION = "Here is my recent works.";
   const String THERES_MORE = "There's more";
   const String VIEW_ALL_PROJECTS = "view all projects";
 
@@ -85,9 +86,9 @@ part of values;
       "“I have no special talents. I am only passionately curious.”";
   const String FAMOUS_QUOTE_AUTHOR = "Albert Einstein";
   const String WORK_TOGETHER = "Let's work together.";
-  const String AVAILABLE_FOR_FREELANCE =
-      "I'm available for Consultancy & Freelancing.";
-  const String SAY_HELLO = "Say Hello";
+  const String AVAILABLE_FOR_JOB =
+      "I'm available for taking new challenges.";
+  const String SAY_HI = "Say Hi";
 
   // Works Page
   const String VIEW_PROJECT = "View Project";
@@ -109,7 +110,7 @@ part of values;
 
   const String VIEW = "View";
   const String COMING_SOON = "COMING SOON !!";
-  const String BUILT_WITH_FLUTTER = "Built using ";
+  const String DEVELOPED_WITH_FLUTTER = "Developed using ";
   const String DEV_EMAIL = "davidcobbina47@gmail.com";
   const String EMAIL_URL = "mailto:<$DEV_EMAIL>?subject=&body=";
 
@@ -166,10 +167,10 @@ part of values;
 
   //Socials
 
-  const String GITHUB_URL = "https://github.com/david-legend";
+  const String GITHUB_URL = "https://github.com/Shaheduzzaman67";
   const String LINKED_IN_URL =
-      "https://www.linkedin.com/in/david-cobbina-7b0226119";
-  const String TWITTER_URL = "https://twitter.com/DavidLegend47";
+      "https://www.linkedin.com/in/shishir-ove/";
+  const String FACEBOOK_URL = "https://www.facebook.com/shishirove";
   const String INSTAGRAM_URL =
       "https://www.instagram.com/david_legend_47";
   const String TELEGRAM_URL = "https://t.me/DavidLegend";
@@ -178,7 +179,7 @@ part of values;
   const String CONNECT = "Connect with me";
   const String EMAIL = "Email";
   const String LINKED_IN = "LinkedIn";
-  const String TWITTER = "Twitter";
+  const String FACEBOOK = "Facebook";
   const String INSTAGRAM = "Instagram";
   const String TELEGRAM = "Telegram";
   const String GITHUB = "Github";

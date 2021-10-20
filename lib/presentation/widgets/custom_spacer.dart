@@ -1,4 +1,4 @@
-import 'package:portfolio/core/layout/adaptive.dart';
+import 'package:portfolio/const/adaptive.dart';
 import 'package:flutter/material.dart';
 
 class CustomSpacer extends StatelessWidget {

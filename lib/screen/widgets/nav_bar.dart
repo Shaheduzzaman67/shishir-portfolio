@@ -1,8 +1,8 @@
-import 'package:portfolio/core/layout/adaptive.dart';
+import 'package:portfolio/const/adaptive.dart';
 import 'package:portfolio/core/utils/functions.dart';
 import 'package:portfolio/presentation/widgets/aerium_button.dart';
 import 'package:portfolio/presentation/widgets/animated_text_slide_box_transition.dart';
-import 'package:portfolio/presentation/widgets/app_logo.dart';
+import 'package:portfolio/screen/widgets/app_logo.dart';
 import 'package:portfolio/presentation/widgets/empty.dart';
 import 'package:portfolio/presentation/widgets/nav_item.dart';
 import 'package:portfolio/const/spaces.dart';

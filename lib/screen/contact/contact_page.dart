@@ -1,5 +1,5 @@
 import 'package:portfolio/core/utils/extensions.dart';
-import 'package:portfolio/core/layout/adaptive.dart';
+import 'package:portfolio/const/adaptive.dart';
 import 'package:portfolio/infrastructure/bloc/email_bloc.dart';
 import 'package:portfolio/screen/widgets/simple_footer.dart';
 import 'package:portfolio/presentation/widgets/aerium_button.dart';

@@ -1,4 +1,4 @@
-import 'package:portfolio/core/layout/adaptive.dart';
+import 'package:portfolio/const/adaptive.dart';
 import 'package:portfolio/core/utils/functions.dart';
 import 'package:portfolio/presentation/widgets/animated_bubble_button.dart';
 import 'package:portfolio/presentation/widgets/animated_positioned_text.dart';
@@ -51,8 +51,8 @@ class _AboutprojectState extends State<Aboutproject> {
   @override
   Widget build(BuildContext context) {
     double googlePlayButtonWidth = 150;
-    double targetWidth = responsiveSize(context, 118, 150, md: 150);
-    double initialWidth = responsiveSize(context, 36, 50, md: 50);
+    double targetWidth = responsiveSize(context, 118, 150, medium: 150);
+    double initialWidth = responsiveSize(context, 36, 50, medium: 50);
     TextTheme textTheme = Theme.of(context).textTheme;
     TextStyle? bodyTextStyle = textTheme.bodyText1?.copyWith(
       fontSize: Sizes.TEXT_SIZE_18,
@@ -64,10 +64,10 @@ class _AboutprojectState extends State<Aboutproject> {
       context,
       widget.width,
       widget.width * 0.55,
-      md: widget.width * 0.75,
+      medium: widget.width * 0.75,
     );
     double projectDataSpacing =
-        responsiveSize(context, widget.width * 0.1, 48, md: 36);
+        responsiveSize(context, widget.width * 0.1, 48, medium: 36);
     double widthOfProjectItem = (projectDataWidth - (projectDataSpacing)) / 2;
     BorderRadiusGeometry borderRadius = BorderRadius.all(
       Radius.circular(100.0),
@@ -78,7 +78,7 @@ class _AboutprojectState extends State<Aboutproject> {
         context,
         Sizes.TEXT_SIZE_14,
         Sizes.TEXT_SIZE_16,
-        sm: Sizes.TEXT_SIZE_15,
+        small: Sizes.TEXT_SIZE_15,
       ),
       fontWeight: FontWeight.w500,
     );
@@ -160,20 +160,19 @@ class _AboutprojectState extends State<Aboutproject> {
                       ),
                        width: targetWidth,
                       height: initialWidth,
-                      child: AnimatedBubbleButton(
+                      child: CircularButton(
                         title: LAUNCH_APP,
                         color: grey100,
                         imageColor: black,
                         startBorderRadius: borderRadius,
-                          startWidth: initialWidth,
+
                         height: initialWidth,
                         targetWidth: targetWidth,
                         titleStyle: buttonStyle,
                         onTap: () {
                           Functions.launchUrl(widget.projectData.webUrl);
                         },
-                        startOffset: Offset(0, 0),
-                        targetOffset: Offset(0.1, 0),
+
                       ),
                     )
                   : Empty(),
@@ -186,17 +185,16 @@ class _AboutprojectState extends State<Aboutproject> {
                       ),
                       width: targetWidth,
                       height: initialWidth,
-                      child: AnimatedBubbleButton(
+                      child: CircularButton(
                         title: SOURCE_CODE,
                         color: grey100,
                         imageColor: black,
                         startBorderRadius: borderRadius,
-                        startWidth: initialWidth,
+
                         height: initialWidth,
                         targetWidth: targetWidth,
                         titleStyle: buttonStyle,
-                        startOffset: Offset(0, 0),
-                        targetOffset: Offset(0.1, 0),
+
                         onTap: () {
                           Functions.launchUrl(widget.projectData.gitHubUrl);
                         },

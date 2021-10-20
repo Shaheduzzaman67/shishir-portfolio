@@ -1,4 +1,4 @@
-import 'package:portfolio/core/layout/adaptive.dart';
+import 'package:portfolio/const/adaptive.dart';
 import 'package:portfolio/presentation/widgets/animated_bubble_button.dart';
 import 'package:portfolio/presentation/widgets/project_item.dart';
 import 'package:portfolio/const/spaces.dart';
@@ -69,7 +69,7 @@ class _NextProjectState extends State<NextProject>
     TextTheme textTheme = Theme.of(context).textTheme;
     final EdgeInsetsGeometry marginLeft = EdgeInsets.only(left: 16);
     double projectTitleFontSize =
-        responsiveSize(context, 28, 48, md: 40, sm: 36);
+        responsiveSize(context, 28, 48, medium: 40, small: 36);
     BorderRadiusGeometry borderRadius = BorderRadius.all(
       Radius.circular(100.0),
     );
@@ -79,7 +79,7 @@ class _NextProjectState extends State<NextProject>
         context,
         Sizes.TEXT_SIZE_14,
         Sizes.TEXT_SIZE_16,
-        sm: Sizes.TEXT_SIZE_15,
+        small: Sizes.TEXT_SIZE_15,
       ),
       fontWeight: FontWeight.w500,
     );
@@ -121,14 +121,13 @@ class _NextProjectState extends State<NextProject>
                   ),
                 ),
                 SpaceH30(),
-                AnimatedBubbleButton(
+                CircularButton(
                   title: VIEW_PROJECT,
                   color: grey100,
                   imageColor: black,
                   startBorderRadius: borderRadius,
                   titleStyle: buttonStyle,
-                  startOffset: Offset(0, 0),
-                  targetOffset: Offset(0.1, 0),
+
                   onTap: () {
                     if (widget.navigateToNextProject != null) {
                       widget.navigateToNextProject!();
@@ -211,14 +210,12 @@ class _NextProjectState extends State<NextProject>
                         ),
                       ),
                       SpaceH20(),
-                      AnimatedBubbleButton(
+                      CircularButton(
                         title: VIEW_PROJECT,
                         color: grey100,
                         imageColor: black,
                         startBorderRadius: borderRadius,
                         titleStyle: buttonStyle,
-                        startOffset: Offset(0, 0),
-                        targetOffset: Offset(0.1, 0),
                         onTap: () {
                           if (widget.navigateToNextProject != null) {
                             widget.navigateToNextProject!();

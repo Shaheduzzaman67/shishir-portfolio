@@ -29,6 +29,7 @@ part of values;
 
   // Red
    const Color errorRed = Color(0xFFFF2019);
+const Color PrimaryRed = Color(0xffC0392B);
 
   // Project Primary Colors
    const Color nimbus = Color(0xFFF6C350);

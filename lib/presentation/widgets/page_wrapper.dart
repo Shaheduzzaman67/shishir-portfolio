@@ -1,4 +1,4 @@
-import 'package:portfolio/core/layout/adaptive.dart';
+import 'package:portfolio/const/adaptive.dart';
 import 'package:portfolio/screen/home/home_screen.dart';
 import 'package:portfolio/screen/widgets/nav_bar.dart';
 import 'package:portfolio/presentation/widgets/app_drawer.dart';

@@ -1,4 +1,4 @@
-import 'package:portfolio/core/layout/adaptive.dart';
+import 'package:portfolio/const/adaptive.dart';
 import 'package:portfolio/presentation/widgets/animated_bubble_button.dart';
 import 'package:portfolio/const/spaces.dart';
 import 'package:portfolio/values/values.dart';
@@ -270,8 +270,8 @@ class _ProjectItemLgState extends State<ProjectItemLg>
           context,
           assignWidth(context, 0.25),
           assignWidth(context, 0.25), // 25%
-          md: assignWidth(context, 0.33), // 33%
-          sm: assignWidth(context, 0.35), // 30%
+          medium: assignWidth(context, 0.33), // 33%
+          small: assignWidth(context, 0.35), // 30%
         );
     // computes the position of the button, positions the button in the middle
     // of the container using subheight as it's height
@@ -284,15 +284,15 @@ class _ProjectItemLgState extends State<ProjectItemLg>
       context,
       projectItemWidth / 2.5,
       projectItemWidth / 4,
-      md: projectItemWidth / 3,
-      sm: projectItemWidth / 2.8,
+      medium: projectItemWidth / 3,
+      small: projectItemWidth / 2.8,
     );
     Animation<double> _animation = Tween<double>(
       begin: responsiveSize(
         context,
         -imageWidth * 2.2,
         -imageWidth * 1.8,
-        md: -imageWidth * 2.2,
+        medium: -imageWidth * 2.2,
       ),
       end: 0.0,
     ).animate(CurvedAnimation(parent: _controller, curve: Curves.fastOutSlowIn))
@@ -303,13 +303,13 @@ class _ProjectItemLgState extends State<ProjectItemLg>
       context,
       startWidthOfButtonMd,
       startWidthOfButton,
-      md: startWidthOfButtonMd,
+      medium: startWidthOfButtonMd,
     );
     double buttonTargetWidth = responsiveSize(
       context,
       targetWidthOfButtonMd,
       targetWidthOfButton,
-      md: targetWidthOfButtonMd,
+      medium: targetWidthOfButtonMd,
     );
     TextTheme textTheme = Theme.of(context).textTheme;
     // textStyle for button for viewing project
@@ -319,7 +319,7 @@ class _ProjectItemLgState extends State<ProjectItemLg>
         context,
         Sizes.TEXT_SIZE_14,
         Sizes.TEXT_SIZE_16,
-        md: Sizes.TEXT_SIZE_14,
+        medium: Sizes.TEXT_SIZE_14,
       ),
       fontWeight: FontWeight.w500,
     );
@@ -334,7 +334,7 @@ class _ProjectItemLgState extends State<ProjectItemLg>
     TextStyle? defaultTitleStyle = widget.titleStyle ??
         textTheme.subtitle1?.copyWith(
           color: black,
-          fontSize: responsiveSize(context, 24, 40, md: 36, sm: 30),
+          fontSize: responsiveSize(context, 24, 40, medium: 36, small: 30),
         );
     // textStyle for the subtitle (describing project platform) of the project
     TextStyle? defaultSubtitleStyle = widget.subtitleStyle ??
@@ -422,9 +422,7 @@ class _ProjectItemLgState extends State<ProjectItemLg>
             Positioned(
               top: positionOfButton, //places button
               right: assignWidth(context, 0.1),
-              child: AnimatedBubbleButton(
-                startWidth: buttonWidth,
-                hovering: _isHovering,
+              child: CircularButton(
                 controller: _controller,
                 duration: widget.duration,
                 controlsOwnAnimation: false,
@@ -634,9 +632,7 @@ class _ProjectItemSmState extends State<ProjectItemSm>
               margin: EdgeInsets.only(right: 30),
               child: Align(
                 alignment: Alignment.centerRight,
-                child: AnimatedBubbleButton(
-                  startWidth: startWidthOfButtonSm,
-                  hovering: _isHovering,
+                child: CircularButton(
                   controller: _controller,
                   duration: widget.duration,
                   height: startWidthOfButtonSm,

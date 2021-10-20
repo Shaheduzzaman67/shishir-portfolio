@@ -1,4 +1,4 @@
-import 'package:portfolio/core/layout/adaptive.dart';
+import 'package:portfolio/const/adaptive.dart';
 import 'package:portfolio/core/utils/functions.dart';
 import 'package:portfolio/screen/widgets/simple_footer.dart';
 import 'package:portfolio/presentation/widgets/animated_text_slide_box_transition.dart';

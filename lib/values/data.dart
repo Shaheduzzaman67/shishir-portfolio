@@ -112,20 +112,11 @@ class Data {
       url: LINKED_IN_URL,
     ),
     SocialData(
-      name: TWITTER,
+      name: FACEBOOK,
       iconData: FontAwesomeIcons.twitter,
-      url: TWITTER_URL,
+      url: FACEBOOK_URL,
     ),
-    SocialData(
-      name: INSTAGRAM,
-      iconData: FontAwesomeIcons.instagram,
-      url: INSTAGRAM_URL,
-    ),
-    SocialData(
-      name: TELEGRAM,
-      iconData: FontAwesomeIcons.telegram,
-      url: TELEGRAM_URL,
-    ),
+
   ];
 
   static List<String> mobileTechnologies = [
@@ -165,9 +156,9 @@ class Data {
       url: LINKED_IN_URL,
     ),
     SocialData(
-      name: TWITTER,
+      name: FACEBOOK,
       iconData: FontAwesomeIcons.twitter,
-      url: TWITTER_URL,
+      url: FACEBOOK_URL,
     ),
   ];
 
@@ -178,9 +169,9 @@ class Data {
       url: LINKED_IN_URL,
     ),
     SocialData(
-      name: TWITTER,
+      name: FACEBOOK,
       iconData: FontAwesomeIcons.twitter,
-      url: TWITTER_URL,
+      url: FACEBOOK_URL,
     ),
     SocialData(
       name: INSTAGRAM,

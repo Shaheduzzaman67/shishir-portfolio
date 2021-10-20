@@ -1,6 +1,6 @@
-import 'package:portfolio/core/layout/adaptive.dart';
+import 'package:portfolio/const/adaptive.dart';
 import 'package:portfolio/core/utils/functions.dart';
-import 'package:portfolio/screen/widgets/animated_footer.dart';
+import 'package:portfolio/screen/widgets/footer.dart';
 import 'package:portfolio/screen/widgets/page_header.dart';
 import 'package:portfolio/presentation/widgets/custom_spacer.dart';
 import 'package:portfolio/presentation/widgets/page_wrapper.dart';
@@ -113,7 +113,7 @@ class _WorksPageState extends State<WorksPage> with TickerProviderStateMixin {
             ),
           ),
           CustomSpacer(heightFactor: 0.15),
-          AnimatedFooter(),
+          Footer(),
         ],
       ),
     );

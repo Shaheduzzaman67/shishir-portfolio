@@ -1,4 +1,4 @@
-import 'package:portfolio/core/layout/adaptive.dart';
+import 'package:portfolio/const/adaptive.dart';
 import 'package:portfolio/core/utils/functions.dart';
 import 'package:portfolio/presentation/widgets/animated_line_through_text.dart';
 import 'package:portfolio/presentation/widgets/animated_positioned_text.dart';
@@ -165,7 +165,7 @@ class NoteWorthyProjectItem extends StatelessWidget {
         context,
         Sizes.TEXT_SIZE_16,
         Sizes.TEXT_SIZE_20,
-        sm: Sizes.TEXT_SIZE_18,
+        small: Sizes.TEXT_SIZE_18,
       ),
       color: black,
       fontWeight: FontWeight.w500,

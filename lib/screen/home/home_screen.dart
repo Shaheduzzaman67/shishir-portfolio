@@ -1,8 +1,8 @@
-import 'package:portfolio/core/layout/adaptive.dart';
+import 'package:portfolio/const/adaptive.dart';
 import 'package:portfolio/core/utils/functions.dart';
 import 'package:portfolio/screen/home/widget/home_screen_header.dart';
 import 'package:portfolio/screen/widgets/custom_loading_screen.dart';
-import 'package:portfolio/screen/widgets/animated_footer.dart';
+import 'package:portfolio/screen/widgets/footer.dart';
 
 import 'package:portfolio/presentation/widgets/animated_positioned_text.dart';
 import 'package:portfolio/presentation/widgets/animated_slide_transtion.dart';
@@ -84,7 +84,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     TextTheme textTheme = Theme.of(context).textTheme;
     TextStyle? textButtonStyle = textTheme.headline4?.copyWith(
       color: black,
-      fontSize: responsiveSize(context, 30, 40, md: 36, sm: 32),
+      fontSize: responsiveSize(context, 30, 40, medium: 36, small: 32),
       height: 2.0,
     );
     EdgeInsets margin = EdgeInsets.only(
@@ -92,7 +92,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         context,
         assignWidth(context, 0.10),
         assignWidth(context, 0.15),
-        sm: assignWidth(context, 0.15),
+        small: assignWidth(context, 0.15),
       ),
     );
     return PageWrapper(
@@ -140,10 +140,10 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                 children: [
                   AnimatedTextSlideBoxTransition(
                     controller: _recentWorksController,
-                    text: CRAFTED_WITH_LOVE,
+                    text: PROGRAMMING_QOUTE,
                     textStyle: textTheme.headline4?.copyWith(
                       color: black,
-                      fontSize: responsiveSize(context, 30, 48, md: 40, sm: 36),
+                      fontSize: responsiveSize(context, 30, 48, medium: 40, small: 36),
                       height: 2.0,
                     ),
                   ),
@@ -248,7 +248,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
             ),
           ),
           CustomSpacer(heightFactor: 0.15),
-          AnimatedFooter(),
+          Footer(),
         ],
       ),
     );

@@ -128,7 +128,7 @@ class _HomeScreenHeaderState extends State<HomeScreenHeader>
                     child: ClipRRect(
                       borderRadius: BorderRadius.all(Radius.circular(50)),
                       child: Image.asset(
-                        ImagePath.DEV_SHISHIR,
+                        ImagePath.DEV,
                         //width: screenWidth,
                       ),
                     ),
@@ -285,7 +285,7 @@ class _AboutDevState extends State<AboutDev> {
             ),
             maxLines: 3,
             textStyle: textTheme.headline2?.copyWith(
-              color: roamAppLogo,
+              color: bmartAppLogo,
               fontSize: headerFontSize,
             ),
           ),

@@ -16,8 +16,8 @@ class CertificationData {
   final String awardedBy;
 }
 
-class NoteWorthyProjectDetails {
-  NoteWorthyProjectDetails({
+class OthersProjectDetails {
+  OthersProjectDetails({
     required this.projectName,
     required this.isOnPlayStore,
     required this.isPublic,
@@ -97,7 +97,7 @@ class Data {
       name: EXPERIENCE,
       route: EXPERIENCE_PAGE,
     ),
-    NavItemData(name: CONTACT, route: CONTACT_PAGE),
+    //NavItemData(name: CONTACT, route: CONTACT_PAGE),
   ];
 
   static List<SocialData> socialData = [
@@ -122,27 +122,20 @@ class Data {
   static List<String> mobileTechnologies = [
     "Android",
     "Flutter",
+    "Dart",
     "Java Android",
-    "Kotlin",
-    "Dart"
+
   ];
 
   static List<String> otherTechnologies = [
-    "HTML 5",
-    "CSS 3",
-    "JavaScript",
-    "Wordpress",
-    "React JS",
-    "Node JS",
     "Git",
-    "Laravel",
-    "PHP",
     "Dart",
+    "C#",
     "SQL",
-    "C++",
     "Firebase",
     "Figma",
     "Adobe XD",
+    "Unity 3D",
   ];
   static List<SocialData> socialData1 = [
     SocialData(
@@ -174,14 +167,9 @@ class Data {
       url: FACEBOOK_URL,
     ),
     SocialData(
-      name: INSTAGRAM,
-      iconData: FontAwesomeIcons.instagram,
-      url: INSTAGRAM_URL,
-    ),
-    SocialData(
-      name: TELEGRAM,
-      iconData: FontAwesomeIcons.telegram,
-      url: TELEGRAM_URL,
+      name: GITHUB,
+      iconData: FontAwesomeIcons.github,
+      url: GITHUB_URL,
     ),
   ];
 
@@ -200,71 +188,46 @@ class Data {
   ];
 
   static List<ProjectItemData> recentWorks = [
-    Projects.FLUTTER_CATALOG,
+    Projects.FLUTTER_DURONTO_APP,
 
-    Projects.ROAM,
+    Projects.vDOC,
 
   ];
 
   static List<ProjectItemData> projects = [
-    Projects.FLUTTER_CATALOG,
-
-    Projects.ROAM,
+    Projects.FLUTTER_DURONTO_APP,
+    Projects.vDOC,
+    Projects.BMART_APP,
+    Projects.MYSPORTS_APP,
+    Projects.SURVEY_APP,
 
   ];
 
-  static List<NoteWorthyProjectDetails> noteworthyProjects = [
-    NoteWorthyProjectDetails(
-      projectName: AMOR_APP,
+  static List<OthersProjectDetails> othersProjects = [
+    OthersProjectDetails(
+      projectName: ASSISTANT_APP,
       isPublic: true,
-      isOnPlayStore: false,
+      isOnPlayStore: true,
       isWeb: true,
       technologyUsed: FLUTTER,
-      projectDescription: AMOR_APP_DETAIL,
-      gitHubUrl: AMOR_APP_GITHUB_URL,
-      webUrl: AMOR_APP_WEB_URL,
+      projectDescription: ASSITANT_APP_DETAIL,
+      gitHubUrl: ASSITANT_APP_GITHUB_URL,
+      webUrl: ASSITANT_APP_WEB_URL,
       isLive: true,
     ),
-    NoteWorthyProjectDetails(
-      projectName: PROGRAMMING_FOR_DATA_SCIENCE,
-      isPublic: true,
-      isOnPlayStore: false,
-      isWeb: false,
-      technologyUsed: PYTHON,
-      projectDescription: PROGRAMMING_FOR_DATA_SCIENCE_DETAIL,
-      gitHubUrl: PROGRAMMING_FOR_DATA_SCIENCE_GITHUB_URL,
-      isLive: false,
-    ),
-    NoteWorthyProjectDetails(
-      projectName: PYTHON_ALGORITHMS,
-      isPublic: true,
-      isOnPlayStore: false,
-      isWeb: false,
-      technologyUsed: PYTHON,
-      projectDescription: PYTHON_ALGORITHMS_DETAIL,
-      gitHubUrl: PYTHON_ALGORITHMS_GITHUB_URL,
-      isLive: false,
-    ),
-    NoteWorthyProjectDetails(
-      projectName: ONBOARDING_APP,
-      isPublic: true,
+
+
+    OthersProjectDetails(
+      projectName: DIET_ACHIVER_APP,
+      isPublic: false,
       isOnPlayStore: false,
       isWeb: false,
       technologyUsed: FLUTTER,
-      projectDescription: ONBOARDING_APP_DETAIL,
-      gitHubUrl: ONBOARDING_APP_GITHUB_URL,
+      projectDescription: DIET_ACHIVER_APP_DETAIL,
+      gitHubUrl: DIET_ACHIVER_APP_GITHUB_URL,
       isLive: false,
     ),
-    NoteWorthyProjectDetails(
-      projectName: FINOPP,
-      isPublic: true,
-      isOnPlayStore: false,
-      isWeb: false,
-      technologyUsed: FLUTTER,
-      projectDescription: FINOPP_DETAIL,
-      gitHubUrl: FINOPP_GITHUB_URL,
-      isLive: false,
-    ),
+
   ];
 
   static List<CertificationData> certificationData = [
@@ -293,16 +256,16 @@ class Data {
 
   static List<ExperienceData> experienceData = [
     ExperienceData(
-      company: COMPANY_5,
-      position: POSITION_5,
-      companyUrl: COMPANY_5_URL,
+      company: COMPANY_1,
+      position: POSITION_1,
+      companyUrl: COMPANY_1_URL,
       roles: [
-        COMPANY_5_ROLE_1,
-        COMPANY_5_ROLE_2,
-        COMPANY_5_ROLE_3,
+        COMPANY_1_ROLE_1,
+        COMPANY_1_ROLE_2,
+        COMPANY_1_ROLE_3,
       ],
-      location: LOCATION_5,
-      duration: DURATION_5,
+      location: LOCATION_1,
+      duration: DURATION_1,
     ),
     ExperienceData(
       company: COMPANY_4,
@@ -317,89 +280,125 @@ class Data {
       location: LOCATION_4,
       duration: DURATION_4,
     ),
-    ExperienceData(
-      company: COMPANY_3,
-      position: POSITION_3,
-      companyUrl: COMPANY_3_URL,
-      roles: [
-        COMPANY_3_ROLE_1,
-        COMPANY_3_ROLE_2,
-        COMPANY_3_ROLE_3,
-      ],
-      location: LOCATION_3,
-      duration: DURATION_3,
-    ),
-    ExperienceData(
-      company: COMPANY_2,
-      position: POSITION_2,
-      companyUrl: COMPANY_2_URL,
-      roles: [
-        COMPANY_2_ROLE_1,
-        COMPANY_2_ROLE_2,
-        COMPANY_2_ROLE_3,
-      ],
-      location: LOCATION_2,
-      duration: DURATION_2,
-    ),
+
   ];
 }
 
 class Projects {
-  static ProjectItemData FLUTTER_CATALOG = ProjectItemData(
-    title: FLUTTER_ARCHIVE,
-    subtitle: FLUTTER_ARCHIVE,
-    platform: FLUTTER_CATALOG_PLATFORM,
+  static ProjectItemData FLUTTER_DURONTO_APP = ProjectItemData(
+    title: FLUTTER_DURONTO,
+    subtitle: FLUTTER_DURONTO,
+    platform: FLUTTER_DURONTO_PLATFORM,
     primaryColor: flutter_catalog,
-    image: ImagePath.FLUTTER_CATALOG_COVER,
-    coverUrl: ImagePath.FLUTTER_CATALOG_COVER,
+    image: ImagePath.FLUTTER_DURONTO_COVER,
+    coverUrl: ImagePath.FLUTTER_DURONTO_COVER,
     navSelectedTitleColor: flutterCatalogSelectedNavTitle,
     appLogoColor: flutterCatalogAppLogo,
-    projectAssets: [
-      ImagePath.FLUTTER_CATALOG_SCREENS,
-      ImagePath.FLUTTER_CATALOG_1,
-      ImagePath.FLUTTER_CATALOG_2,
-      ImagePath.FLUTTER_CATALOG_3,
-      ImagePath.FLUTTER_CATALOG_4,
-      ImagePath.FLUTTER_CATALOG_5,
-    ],
-    category: FLUTTER_CATALOG_CATEGORY,
-    portfolioDescription: FLUTTER_CATALOG_DETAIL,
-    isPublic: true,
+    category: FLUTTER_DURONTO_CATEGORY,
+    portfolioDescription: FLUTTER_DURONTO_DETAIL,
+    isPublic: false,
     isOnPlayStore: true,
     technologyUsed: FLUTTER,
-    gitHubUrl: FLUTTER_CATALOG_GITHUB_URL,
-    playStoreUrl: FLUTTER_CATALOG_PLAYSTORE_URL,
+    gitHubUrl: FLUTTER_DURONTO_GITHUB_URL,
+    playStoreUrl: FLUTTER_DURONTO_PLAYSTORE_URL,
   );
 
-  static ProjectItemData ROAM = ProjectItemData(
-    title: Pro1,
-    subtitle: Pro1,
-    primaryColor: roam,
-    category: ROAM_CATEGORY,
-    designer: ROAM_DESIGNER,
-    platform: ROAM_PLATFORM,
-    image: ImagePath.ROAM_COVER,
-    coverUrl: ImagePath.ROAM_COVER,
-    navTitleColor: roamNavTitle,
-    navSelectedTitleColor: roamSelectedNavTitle,
-    appLogoColor: roamAppLogo,
-    projectAssets: [
-      ImagePath.ROAM_OVERALL,
-      ImagePath.ROAM_ONBOARDING,
-      ImagePath.ROAM_HOME,
-      ImagePath.ROAM_EXPLORE,
-      ImagePath.ROAM_PROFILE,
-      ImagePath.ROAM_FLOW_CHART,
-      ImagePath.ROAM_WIREFRAMES_1,
-      ImagePath.ROAM_WIREFRAMES_2,
-      ImagePath.ROAM_WIREFRAMES_3,
-    ],
-    portfolioDescription: ROAM_DETAIL,
+  static ProjectItemData vDOC = ProjectItemData(
+    title: VDOC,
+    subtitle: VDOC,
+    primaryColor: vDoc,
+    category: VDOC_CATEGORY,
+    designer: VDOC_DESIGNER,
+    platform: VDOC_PLATFORM,
+    image: ImagePath.vDOC_COVER,
+    coverUrl: ImagePath.vDOC_COVER,
+    navTitleColor: vDocNavTitle,
+    navSelectedTitleColor: vDocSelectedNavTitle,
+    appLogoColor: vDocAppLogo,
+    portfolioDescription: VDOC_DETAIL,
+    isPublic: false,
+    isOnPlayStore: true,
+    technologyUsed: FLUTTER,
+    gitHubUrl: VDOC_GITHUB_URL,
+    playStoreUrl: VDOC_PLAYSTORE_URL,
+  );
+
+  static ProjectItemData BMART_APP = ProjectItemData(
+    title: BMART,
+    subtitle: BMART_SUBTITLE,
+    primaryColor: bmart,
+    category: BMART_CATEGORY,
+    designer: BMART_DESIGNER,
+    platform: BMART_PLATFORM,
+    image: ImagePath.BMART_COVER,
+    coverUrl: ImagePath.BMART_COVER,
+    navTitleColor: bmartNavTitle,
+    navSelectedTitleColor: bmartSelectedNavTitle,
+    appLogoColor: bmartAppLogo,
+    portfolioDescription: BMART_DETAIL,
+    isPublic: false,
+    isOnPlayStore: true,
+    technologyUsed: FLUTTER,
+    gitHubUrl: BMART_GITHUB_URL,
+    playStoreUrl: BMART_PLAYSTORE_URL,
+  );
+
+  static ProjectItemData MYSPORTS_APP = ProjectItemData(
+    title: MYSPORTS,
+    subtitle: MYSPORTS_SUBTITLE,
+    primaryColor: mySports,
+    category: MYSPORTS_CATEGORY,
+    designer: MYSPORTS_DESIGNER,
+    platform: MYSPORTS_PLATFORM,
+    image: ImagePath.MYSPORTS_COVER,
+    coverUrl: ImagePath.MYSPORTS_COVER,
+    navTitleColor: mySportsNavTitle,
+    navSelectedTitleColor: mySportsSelectedNavTitle,
+    appLogoColor: mySportsAppLogo,
+    portfolioDescription: MYSPORTS_DETAIL,
+    isPublic: false,
+    isOnPlayStore: true,
+    technologyUsed: FLUTTER,
+    gitHubUrl: MYSPORTS_GITHUB_URL,
+    playStoreUrl: MYSPORTS_PLAYSTORE_URL,
+  );
+
+  static ProjectItemData SURVEY_APP = ProjectItemData(
+    title: SURVEY,
+    subtitle: SURVEY_SUBTITLE,
+    primaryColor: survey,
+    category: SURVEY_CATEGORY,
+    designer: SURVEY_DESIGNER,
+    platform: SURVEY_PLATFORM,
+    image: ImagePath.SURVEY_COVER,
+    coverUrl: ImagePath.SURVEY_COVER,
+    navTitleColor: surveyNavTitle,
+    navSelectedTitleColor: surveySelectedNavTitle,
+    appLogoColor: surveyAppLogo,
+    portfolioDescription: SURVEY_DETAIL,
     isPublic: true,
     isOnPlayStore: true,
     technologyUsed: FLUTTER,
-    gitHubUrl: ROAM_GITHUB_URL,
-    playStoreUrl: ROAM_PLAYSTORE_URL,
+    gitHubUrl: SURVEY_GITHUB_URL,
+    playStoreUrl: SURVEY_PLAYSTORE_URL,
   );
 
 }
+
+final kContactIcons = [
+  Icons.home,
+  Icons.phone,
+  Icons.mail,
+];
+
+final kContactTitles = [
+  "Location",
+  "Phone",
+  "Email",
+];
+
+final kContactDetails = [
+  "Attock, Pakistan",
+  "(+92) 346 0159889",
+  "hamza@mhmz.dev"
+];

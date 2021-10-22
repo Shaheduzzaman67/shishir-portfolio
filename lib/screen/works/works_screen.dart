@@ -5,7 +5,7 @@ import 'package:portfolio/screen/widgets/page_header.dart';
 import 'package:portfolio/presentation/widgets/custom_spacer.dart';
 import 'package:portfolio/presentation/widgets/page_wrapper.dart';
 import 'package:portfolio/presentation/widgets/project_item.dart';
-import 'package:portfolio/screen/works/widgets/noteworthy_projects.dart';
+import 'package:portfolio/screen/works/widgets/others_projects.dart';
 import 'package:portfolio/values/values.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
@@ -109,7 +109,7 @@ class _WorksPageState extends State<WorksPage> with TickerProviderStateMixin {
           Container(
             child: Padding(
               padding: padding,
-              child: NoteWorthyProjects(),
+              child: OthersProjects(),
             ),
           ),
           CustomSpacer(heightFactor: 0.15),
@@ -138,7 +138,7 @@ class _WorksPageState extends State<WorksPage> with TickerProviderStateMixin {
             projectItemheight: projectHeight.toDouble(),
             subheight: subHeight.toDouble(),
             backgroundColor: accentColor2.withOpacity(0.35),
-            title: data[index].title.toLowerCase(),
+            title: data[index].title,
             subtitle: data[index].category,
             containerColor: data[index].primaryColor,
             onTap: () {
@@ -170,7 +170,7 @@ class _WorksPageState extends State<WorksPage> with TickerProviderStateMixin {
           child: ProjectItemSm(
             projectNumber: index + 1 > 9 ? "${index + 1}" : "0${index + 1}",
             imageUrl: data[index].image,
-            title: data[index].title.toLowerCase(),
+            title: data[index].title,
             subtitle: data[index].category,
             containerColor: data[index].primaryColor,
             onTap: () {

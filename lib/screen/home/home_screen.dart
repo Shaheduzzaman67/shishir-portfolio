@@ -271,7 +271,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
             projectItemheight: projectHeight.toDouble(),
             subheight: subHeight.toDouble(),
             backgroundColor: accentColor2.withOpacity(0.35),
-            title: data[index].title.toLowerCase(),
+            title: data[index].title,
             subtitle: data[index].category,
             containerColor: data[index].primaryColor,
             onTap: () {
@@ -303,7 +303,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           child: ProjectItemSm(
             projectNumber: index + 1 > 9 ? "${index + 1}" : "0${index + 1}",
             imageUrl: data[index].image,
-            title: data[index].title.toLowerCase(),
+            title: data[index].title,
             subtitle: data[index].category,
             containerColor: data[index].primaryColor,
             onTap: () {

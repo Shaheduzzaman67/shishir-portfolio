@@ -36,24 +36,24 @@ const Color PrimaryRed = Color(0xffC0392B);
    const Color nimbusNavTitle = Colors.black;
    const Color nimbusSelectedNavTitle = Color(0xFFF6C350);
 
-   const Color foodybite = Color(0xFF6B79F6);
-   const Color foodybiteNavTitle =  Color(0xFFB2B9CF);
-   const Color foodybiteSelectedNavTitle =  Color(0xFF212455);
-   const Color foodybiteAppLogo =  Color(0xFF808BF6);
+   const Color survey = Color(0xFF6B79F6);
+   const Color surveyNavTitle =  Color(0xFFB2B9CF);
+   const Color surveySelectedNavTitle =  Color(0xFF212455);
+   const Color surveyAppLogo =  Color(0xFF808BF6);
 
    const Color flutter_catalog = Color(0xFF5A458D);
    const Color flutterCatalogSelectedNavTitle = Color(0xFF7D54A9);
    const Color flutterCatalogAppLogo = Color(0xFF7D54A9);
 
-   const Color login_catalog = Color(0xFFC95089);
-   const Color loginCatalogNavTitle = Color(0xFF2F3446);
-   const Color loginCatalogSelectedNavTitle = Color(0xFFC95089);
-   const Color loginCatalogAppLogo = Color(0xFFC95089);
+   const Color mySports = Color(0xFFC95089);
+   const Color mySportsNavTitle = Color(0xFF2F3446);
+   const Color mySportsSelectedNavTitle = Color(0xFFC95089);
+   const Color mySportsAppLogo = Color(0xFFC95089);
 
-   const Color roam = Color(0xFF2762CB);
-   const Color roamNavTitle = Color(0xFF6F8D8C);
-   const Color roamSelectedNavTitle = Color(0xFF2E524B);
-   const Color roamAppLogo = Color(0xFF2762CB);
+   const Color bmart = Color(0xFF2762CB);
+   const Color bmartNavTitle = Color(0xFF6F8D8C);
+   const Color bmartSelectedNavTitle = Color(0xFF2E524B);
+   const Color bmartAppLogo = Color(0xFF2762CB);
 
    const Color drop = Color(0xFF6A53A1);
    const Color dropNavTitle = Color(0xFF2A5A4A);
@@ -72,8 +72,8 @@ const Color PrimaryRed = Color(0xffC0392B);
    const Color otpPackageSelectedNavTitle = drop;
    const Color otpPackageAppLogo = Color(0xFF8E7AEF);
 
-   const Color outfitr = Color(0xFF2DB8AF);
-   const Color outfitrNavTitle = Color(0xFF0A0E32);
-   const Color outfitrSelectedNavTitle = Color(0xFF377F8C);
-   const Color outfitrAppLogo = Color(0xFF2DB8AF);
+   const Color vDoc = Color(0xFF2DB8AF);
+   const Color vDocNavTitle = Color(0xFF0A0E32);
+   const Color vDocSelectedNavTitle = Color(0xFF377F8C);
+   const Color vDocAppLogo = Color(0xFF2DB8AF);
 

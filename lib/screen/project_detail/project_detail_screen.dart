@@ -212,8 +212,6 @@ class _ProjectDetailPageState extends State<ProjectDetailPage>
               ),
             ),
           ),
-          CustomSpacer(heightFactor: 0.15),
-          ..._buildProjectAlbum(projectDetails.data.projectAssets),
           projectDetails.hasNextProject
               ? CustomSpacer(heightFactor: 0.15)
               : Empty(),
@@ -244,20 +242,5 @@ class _ProjectDetailPageState extends State<ProjectDetailPage>
         ],
       ),
     );
-  }
-
-  List<Widget> _buildProjectAlbum(List<String> data) {
-    List<Widget> items = [];
-
-    for (int index = 0; index < data.length; index++) {
-      items.add(
-        Image.asset(
-          data[index],
-          fit: BoxFit.cover,
-        ),
-      );
-    }
-
-    return items;
   }
 }

@@ -1,4 +1,6 @@
 import 'package:portfolio/const/adaptive.dart';
+import 'package:portfolio/presentation/widgets/bottomAnimation.dart';
+import 'package:portfolio/presentation/widgets/projectCard.dart';
 import 'package:portfolio/screen/widgets/simple_footer.dart';
 import 'package:portfolio/presentation/widgets/animated_bubble_button.dart';
 import 'package:portfolio/presentation/widgets/animated_positioned_text.dart';
@@ -44,6 +46,8 @@ class _FooterState extends State<Footer>
 
   @override
   Widget build(BuildContext context) {
+    double height = MediaQuery.of(context).size.height;
+    double width = MediaQuery.of(context).size.width;
     double circleImageSize = responsiveSize(context, 100, 150);
     TextTheme textTheme = Theme.of(context).textTheme;
     TextStyle? style = textTheme.bodyText1?.copyWith(
@@ -100,7 +104,7 @@ class _FooterState extends State<Footer>
                 ],
               ),
             ),
-            Spacer(),
+            SpaceH40(),
             AnimatedPositionedText(
               text: AVAILABLE_FOR_JOB,
               textAlign: TextAlign.center,
@@ -112,12 +116,30 @@ class _FooterState extends State<Footer>
               ),
             ),
             SpaceH40(),
-            CircularButton(
+/*            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: List.generate(
+                kContactIcons.length,
+                    (index) => Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 12.0),
+                  child: WidgetAnimator(
+                    child: ProjectCard(
+                      cardWidth: width < 1200 ? width * 0.10 : width * 0.07,
+                      cardHeight: width < 1200 ? height * 0.8 : height * 0.10,
+                      projectIconData: kContactIcons[index],
+                      projectTitle: kContactTitles[index],
+                      projectDescription: kContactDetails[index], projectIcon: '',  key: Key(""),
+                    ),
+                  ),
+                ),
+              ),
+            ),*/
+ /*           CircularButton(
               title: SAY_HI,
               onTap: () {
                 Navigator.pushNamed(context, ContactPage.contactPageRoute);
               },
-            ),
+            ),*/
             Spacer(flex: 3),
             ResponsiveBuilder(
               builder: (context, sizingInformation) {

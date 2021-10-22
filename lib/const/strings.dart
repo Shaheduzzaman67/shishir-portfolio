@@ -4,7 +4,7 @@ part of values;
   //strings
   const String APP_NAME = "Shaheduzzaman";
   const String PORTFOLIO_TITLE = "Shaheduzzaman's Portfolio";
-  const String SITE_URL = "https://davidcobbina.com";
+  const String SITE_URL = "http://www.live-technologies.net/";
 
   const String HOME = "Home";
   const String ABOUT = "About";
@@ -56,29 +56,20 @@ part of values;
   const String EMAIL_FAILED_RESPONSE = "Something went wrong. Please send me an email manually";
 
   // About Page
-  const String ABOUT_DEV_CATCH_LINE =
-      "I am a passionate front-end developer and ui/ux designer with a keen eye for details.";
-  const String ABOUT_DEV_CATCH_LINE_1 = "I specialize in building high";
-  const String ABOUT_DEV_CATCH_LINE_2 =
-      "quality mobile & web applications.";
-  // const String ABOUT_DEV_CATCH_LINE_3 = "& web applications";
-  const String ABOUT_DEV_CATCH_LINE_4 = "I also have a strong";
-  const String ABOUT_DEV_CATCH_LINE_5 = "passion for opensource work.";
-  const String ABOUT_DEV_STORY = "Story";
+  const String ABOUT_DEV_1 = "Experienced mobile app developer";
+  const String ABOUT_DEV_2 = "who has a track record of success creating apps";
+  const String ABOUT_DEV_3 = "that are both well-received and commercially viable.";
+  const String SUMMERY = "Summery";
   const String ABOUT_DEV_STORY_TITLE =
       "A little bit about myself.";
-  const String ABOUT_DEV_STORY_CONTENT_1 =
-      "Hi! I'm David Cobbina, a passionate self taught software engineer based in Ghana. I enjoy building high quality and performant applications that provides users with value and a rich experience. I love building things than live on the web and mobile.";
-  const String ABOUT_DEV_STORY_CONTENT_2 =
-      "I am currently pursuing my Masters in IT in Carnegie Mellon University (Graduating in December 2021) and also actively searching for new opportunities.";
-  const String ABOUT_DEV_STORY_CONTENT_3 =
-      "I'm an avid reader and a problem solver with a keen eye for details. Love travelling, fan of poetry, music, documentaries & TV Series.";
+  const String ABOUT_MYSELF =
+      "Hi! I'm Md. Shaheduzzaman, a passionate software engineer based in Bangladesh, Dhaka. I enjoy building high quality and performant applications that provides users with value and a rich experience. I love building things than any others things.";
   const String ABOUT_DEV_TECHNOLOGY = "Technology";
   const String MOBILE_TECH = "Mobile Technologies";
   const String OTHER_TECH = "Other Technologies";
   const String ABOUT_DEV_TECHNOLOGY_TITLE = "What I use.";
   const String ABOUT_DEV_TECHNOLOGY_CONTENT =
-      "I use a number of tools to aid my creative process when bringing things to life. When building designs and doing front-end work, I fiddle with Adobe XD and Figma interchangeably to get right specs and resources. For coding, I use different tools to get the job done. Listed below are the tools and technologies that I am most comfortable with.";
+      "I use a number of tools to aid my creative process when bringing things to life.";
   const String ABOUT_DEV_CONTACT = "Contact";
   const String ABOUT_DEV_CONTACT_SOCIAL = "Social.";
   const String ABOUT_DEV_CONTACT_EMAIL = "Email.";
@@ -93,9 +84,9 @@ part of values;
   // Works Page
   const String VIEW_PROJECT = "View Project";
   const String MY_WORKS = "My Works.";
-  const String NOTE_WORTHY_PROJECTS = "Other Noteworthy Projects.";
-  const String NOTE_WORTHY_PROJECTS_DESC =
-      "Here are some projects worth mentioning. They are also available on my github repository";
+  const String OTHERS_PROJECTS = "Other Projects.";
+  const String OTHERS_PROJECTS_DESC =
+      "Here are some projects worth mentioning. Some of it are also available in playstore";
 
   // Project Detail
   const String ABOUT_PROJECT = "About Project";
@@ -111,7 +102,7 @@ part of values;
   const String VIEW = "View";
   const String COMING_SOON = "COMING SOON !!";
   const String DEVELOPED_WITH_FLUTTER = "Developed using ";
-  const String DEV_EMAIL = "davidcobbina47@gmail.com";
+  const String DEV_EMAIL = "mdshaheduzzaman67@gmail.com";
   const String EMAIL_URL = "mailto:<$DEV_EMAIL>?subject=&body=";
 
   const String KEY_SKILLS = "KEY SKILLS";
@@ -171,9 +162,7 @@ part of values;
   const String LINKED_IN_URL =
       "https://www.linkedin.com/in/shishir-ove/";
   const String FACEBOOK_URL = "https://www.facebook.com/shishirove";
-  const String INSTAGRAM_URL =
-      "https://www.instagram.com/david_legend_47";
-  const String TELEGRAM_URL = "https://t.me/DavidLegend";
+
 
   //Contacts
   const String CONNECT = "Connect with me";
@@ -205,81 +194,36 @@ part of values;
   const String CURRENT_MONTH_YEAR = "May 2020 - Current";
   const String STARTED_MONTH_YEAR = "May 2017";
 
-  const String COMPANY_2 = "Shrinq";
-  const String COMPANY_2_URL = "https://shrinqghana.com/";
-  const String POSITION_2 = "Software Engineer";
-  const String COMPANY_2_ROLE_1 =
-      "Built a mobile app to track the status of all requested fibre broadband for Vodafone Ghana using Java Android.";
-  const String COMPANY_2_ROLE_2 =
-      "Worked on a team of 2 to build an ID verification application using Java Android.";
-  const String COMPANY_2_ROLE_3 =
-      "Developed and maintained code for in-house and client applications primarily using HTML, CSS, JavaScript, PHP and Laravel.";
-  const String LOCATION_2 = "Asylum Down - Accra";
-  const String DURATION_2 = "April 2018 - June 2019";
 
-  const String COMPANY_3 = "Bewsys";
-  const String COMPANY_3_URL = "https://bewsys.com/";
-  const String POSITION_3 = "Software Engineer";
-  const String COMPANY_3_ROLE_1 =
-      "Worked in a team of 3 to build an inmate management web application used to manage, record and regulate activities at the national prison of South Sudan.";
-  const String COMPANY_3_ROLE_2 =
-      "Architected and implemented a mobile application using flutter for the Palestinian Agriculture Advisory System which helps with data collection and equipping farmers with the right information.";
-  const String COMPANY_3_ROLE_3 =
-      "Modified existing software to correct errors, upgrade interfaces and improve performance.";
-  const String LOCATION_3 = "East Legon - Accra";
-  const String DURATION_3 = "August 2019 - April 2020";
-
-  const String COMPANY_4 = "Consultant";
-  const String COMPANY_4_URL = SITE_URL;
-  const String POSITION_4 = "Software Engineer Consultant";
+  const String COMPANY_4 = "BD Assistant";
+  const String COMPANY_4_URL = "https://bdassistant.com/home";
+  const String POSITION_4 = "Mobile App Developer";
   const String COMPANY_4_ROLE_1 =
-      "Led a team of two engineers to build a research grid monitoring application for Hive Power in Switzerland using flutter.";
+      "Develop E-commerce app to deliver product deals, offers, and coupons to the customers effectively.";
   const String COMPANY_4_ROLE_2 =
-      "Technically reviewed flutter code base of clients as a consultant and suggested ways to improve it at Ex Machina in the UK.";
+      "Engineered and maintained major features of existing mobile application.";
   const String COMPANY_4_ROLE_3 =
-      "Worked as a contractor for Shrinq Ghana Ltd. to build an insurance calculator for Milife Ghana.";
+      "Research and suggest new mobile applications and protocols and implemented on need.";
   const String COMPANY_4_ROLE_4 =
-      "Worked as a Software engineer with Goflow Services in India to improve an already existing video streaming app (BeThere app) using flutter.";
-  const String LOCATION_4 = "Kigali - Rwanda";
-  const String DURATION_4 = "May 2020 - August 2021";
+      "Support entire application lifecycle of existing application.";
+  const String LOCATION_4 = "Rangpur - Bangladesh";
+  const String DURATION_4 = "May 2016 - Present";
 
-  const String COMPANY_5 = "Bridge Innovation";
-  const String COMPANY_5_URL = SITE_URL;
-  const String POSITION_5 = "Software Engineer Intern";
-  const String COMPANY_5_ROLE_1 =
-      "Worked in a team of 4 mobile engineers and  2 designers to build a mobile application for making payments across 3 countries in Africa using flutter.";
-  const String COMPANY_5_ROLE_2 =
-      "Engineered and maintained major features of the Brij mobile application.";
-  const String COMPANY_5_ROLE_3 =
-      "Interfaced with user experience designers and other developers to ensure thoughtful and coherent user experiences across brij’s iOS and Android mobile apps.";
+  const String COMPANY_1 = "Live Technologies Ltd.";
+  const String COMPANY_1_URL = "http://www.live-technologies.net/";
+  const String POSITION_1 = "Mobile App Developer";
+  const String COMPANY_1_ROLE_1 =
+      "Worked in a team to build a mobile application using Flutter.";
+  const String COMPANY_1_ROLE_2 =
+      "Develop popular app like Mobile Browser & vDoc.";
+  const String COMPANY_1_ROLE_3 =
+      "Interfaced with user experience designers and other developers to ensure thoughtful and coherent user experiences.";
 
-  const String LOCATION_5 = "Accra - Ghana";
-  const String DURATION_5 = "June 2021 - Aug 2021";
+  const String LOCATION_1 = "Dhaka - Bangladesh";
+  const String DURATION_1 = "Sep 2018 - Current";
 
-  //Portfolio, Projects
-  const String PORTFOLIO_SITE_V2 = "Aerium V2";
-  const String PORTFOLIO_SITE_V2_PLATFORM = "Web";
-  const String PORTFOLIO_SITE_V2_CATEGORY = "Portfolio / CV.";
-  const String PORTFOLIO_SITE_V2_DESIGNER = "Julius Guevarra.";
-  const String PORTFOLIO_SITE_V2_SUBTITLE =
-      "A beautiful portfolio website built with flutter web.";
-  const String PORTFOLIO_SITE_V2_DETAIL =
-      "As you can tell, you're currently on my portfolio website (Aerium-v2) right now. Aerium-v2 is an elegant progressive web app built to help developers tell their story by showcasing their works and skills.";
-  const String PORTFOLIO_SITE_V2_GITHUB_URL =
-      "https://github.com/david-legend/david-legend.github.io";
-  const String PORTFOLIO_SITE_V2_WEB_URL = "https://davidcobbina.com/";
 
-  const String DROP = "Drop";
-  const String DROP_PLATFORM = "Android / IOS.";
-  const String DROP_CATEGORY = "Ecommerce.";
-  const String DROP_DESIGNER = "Stepan Slobodiansky.";
-  const String DROP_SUBTITLE =
-      "A beautiful ecommerce mobile application.";
-  const String DROP_DETAIL =
-      "Drop is an online store which provides users with a simple, smooth experience and enabling users to get their hands on the latest and newest drops.";
-  const String DROP_GITHUB_URL = "https://github.com/david-legend/drop";
-  const String DROP_PLAYSTORE_URL =
-      "https://play.google.com/store/apps/details?id=com.davidcobbina.drop";
+
 
   const String NIMBUS = "Nimbus";
   const String NIMBUS_PLATFORM = "Web.";
@@ -293,100 +237,69 @@ part of values;
       "https://github.com/david-legend/nimbus";
   const String NIMBUS_WEB_URL = "https://david-legend.github.io/nimbus/";
 
-  const String Pro1 = "Roam";
-  const String ROAM_PLATFORM = "Android / IOS.";
-  const String ROAM_CATEGORY = "Travel.";
-  const String ROAM_DESIGNER = "Georgina Sekyi.";
-  const String ROAM_SUBTITLE =
-      "UI / UX Case study for a travel advisory app.";
-  const String ROAM_DETAIL =
-      "Roam is a UI / UX Case study for a travel advisory app done by Georgina Sekyi and built by me using flutter.";
-  const String ROAM_GITHUB_URL = "https://github.com/david-legend/roam";
-  const String ROAM_PLAYSTORE_URL =
-      "https://play.google.com/store/apps/details?id=com.davidcobbina.roam";
+  const String VDOC = "vDOC";
+  const String VDOC_PLATFORM = "Android / IOS.";
+  const String VDOC_CATEGORY = "Health & Fitness.";
+  const String VDOC_DESIGNER = "Md. Shaheduzzaman";
+  const String VDOC_SUBTITLE =
+      "Easiest way to treat by Specialized doctor.";
+  const String VDOC_DETAIL =
+      "An online platform for consultation with doctors remotely.";
+  const String VDOC_GITHUB_URL = "";
+  const String VDOC_PLAYSTORE_URL =
+      "https://play.google.com/store/apps/details?id=net.technologies.vpatientapp&hl=en_US&gl=US";
 
-  const String LOGIN_CATALOG = "Login Catalog";
-  const String LOGIN_CATALOG_PLATFORM = "Android / IOS.";
-  const String LOGIN_CATALOG_CATEGORY = "UI Kit.";
-  const String LOGIN_CATALOG_SUBTITLE =
-      "A beautiful catalog of login designs";
-  const String LOGIN_CATALOG_DETAIL =
-      "Login Catalog is a beautiful catalog of login designs built with flutter. The goal is to catalog as many as a 1000 different login/Signup designs to help flutter devs get right to the most important part of their app.";
-  const String LOGIN_CATALOG_PLAYSTORE_URL =
-      "https://play.google.com/store/apps/details?id=dev.davidcobbina.logincatalog";
-  const String LOGIN_CATALOG_GITHUB_URL =
-      "https://github.com/david-legend/login_catalog";
 
-  const String FOODY_BITE = "FoodyBite";
-  const String FOODY_BITE_PLATFORM = "Android / IOS.";
-  const String FOODY_BITE_CATEGORY = "Food / Restaurant.";
-  const String FOODY_BITE_DESIGNER = "Yagnesh P.";
-  const String FOODY_BITE_SUBTITLE =
-      "A useful free ui kit design for food related apps";
-  const String FOODY_BITE_DETAIL =
-      "Foodybite is a free ui kit designed by Yagnesh Pipariya and built by David Cobbina. The goal of this project is to fast track development and inspire developers who want to build a food related app.";
-  const String FOODY_BITE_PLAYSTORE_URL = "";
-  const String FOODY_BITE_GITHUB_URL =
-      "https://github.com/david-legend/foodybite";
+const String BMART = "B Mart by BRDGE";
+const String BMART_PLATFORM = "Android / IOS.";
+const String BMART_CATEGORY = "Shopping";
+const String BMART_DESIGNER = "Md. Shaheduzzaman";
+const String BMART_SUBTITLE =
+    "B Mart aims to create a vibrant and robust online marketplace.";
+const String BMART_DETAIL =
+    "B Mart aims to create a vibrant and robust online marketplace by coonnecting B Mart invetors and borrowers through e-commerce activities. Borrowers are able to list product offerings though the B Mart store as merchants, and invesotrs can purchase these goods and services through it as consumers.";
+const String BMART_GITHUB_URL = "";
+const String BMART_PLAYSTORE_URL =
+    "https://play.google.com/store/apps/details?id=brdge.store.sg";
 
-  const String OTP_TEXT_FIELD = "Otp Textfield";
-  const String OTP_TEXT_FIELD_PLATFORM = "Flutter Package/Library.";
-  const String OTP_TEXT_FIELD_CATEGORY = "Package.";
-  const String OTP_TEXT_FIELD_SUBTITLE =
-      "A useful flutter package for helping with otp";
-  const String OTP_TEXT_FIELD_DETAIL =
-      "Otp text field is a simple flutter package built to help flutter devs easily implement OTP in their app. It is highly customizable and very easy to use.";
-  const String OTP_TEXT_FIELD_GITHUB_URL =
-      "https://github.com/david-legend/otp_textfield";
-  const String OTP_TEXT_FIELD_WEB_URL =
-      "https://pub.dev/packages/flutter_otp_text_field";
 
-  const String FLUTTER_ARCHIVE = "Flutter Catalog";
-  const String FLUTTER_CATALOG_PLATFORM = "Android / IOS.";
-  const String FLUTTER_CATALOG_CATEGORY = "UI Kit.";
-  const String FLUTTER_CATALOG_SUBTITLE =
-      "A beautiful cataalog of login designs";
-  const String FLUTTER_CATALOG_DETAIL =
-      "Flutter Catalog is a beautiful catalog of designs built with flutter. The goal is to catalog different components and building blocks of a mobile app to help flutter devs get right to the most important part of their app.";
-  const String FLUTTER_CATALOG_PLAYSTORE_URL =
-      "https://play.google.com/store/apps/details?id=dev.davidcobbina.fluttercatalog";
-  const String FLUTTER_CATALOG_GITHUB_URL =
-      "https://github.com/david-legend/flutter_catalog";
+const String MYSPORTS = "MySports";
+const String MYSPORTS_PLATFORM = "Android / IOS.";
+const String MYSPORTS_CATEGORY = "Sports";
+const String MYSPORTS_DESIGNER = "Md. Shaheduzzaman";
+const String MYSPORTS_SUBTITLE =
+    "Watch live matches";
+const String MYSPORTS_DETAIL =
+    "Robi My Sports for all sports entertainment from Cricket, Football, Tennis etc.";
+const String MYSPORTS_GITHUB_URL = "";
+const String MYSPORTS_PLAYSTORE_URL =
+    "https://play.google.com/store/apps/details?id=net.livetechnologies.mysports";
 
-  const String AERIUM = "Aerium";
-  const String AERIUM_PLATFORM = "Web.";
-  const String AERIUM_CATEGORY = "Portfolio / CV.";
-  const String AERIUM_DESIGNER = "Pavel G.";
-  const String AERIUM_SUBTITLE =
-      "A progressive web app for showcasing your portfolio.";
-  const String AERIUM_DETAIL =
-      "Aerium is the first iteration of my portfolio. Aerium is an elegant portfolio website built to help developers tell their story by showcasing their works and skills.";
-  const String AERIUM_GITHUB_URL =
-      "https://github.com/david-legend/aerium";
-  const String AERIUM_WEB_URL = "http://david-legend.github.io/aerium";
+const String SURVEY = "Survey";
+const String SURVEY_PLATFORM = "Android / IOS.";
+const String SURVEY_CATEGORY = "Productivity";
+const String SURVEY_DESIGNER = "Md. Shaheduzzaman";
+const String SURVEY_SUBTITLE =
+    "Survey Lancer is a survey and data science company.";
+const String SURVEY_DETAIL =
+    "Survey Lancer is a survey and data science company that helps marketers to connect with their customers by letting them know about their customer's needs.";
+const String SURVEY_GITHUB_URL = "";
+const String SURVEY_PLAYSTORE_URL =
+    "https://www.surveylancer.com/";
 
-  const String AERIUM_V2 = "Aerium V2 ";
-  const String AERIUM_V2_PLATFORM = "Web.";
-  const String AERIUM_V2_CATEGORY = "Portfolio / CV.";
-  const String AERIUM_V2_DESIGNER = "Julius G.";
-  const String AERIUM_V2_SUBTITLE =
-      "A progressive web app for showcasing your portfolio.";
-  const String AERIUM_V2_DETAIL =
-      "As you can tell, you're currently on Aerium v2 right now. It is the second iteration of my portfolio website. Aerium V2 is an elegant progressive website built to help developers tell their story by showcasing their works and skills.";
-  const String AERIUM_V2_GITHUB_URL =
-      "https://github.com/david-legend/david-legend.github.io";
-  const String AERIUM_V2_WEB_URL = "https://davidcobbina.com/#/";
 
-  const String OUTFITR = "Outfitr";
-  const String OUTFITR_PLATFORM = "Android / IOS.";
-  const String OUTFITR_CATEGORY = "Ecommerce.";
-  const String OUTFITR_SUBTITLE =
-      "Design your fashion app faster and easier with Outfitr Fashion UI Kit.";
-  const String OUTFITR_DETAIL =
-      "With over 30 unique screens, Outfitr UI Kit is a valuable resource for any developer or enterpreneur that wants to standout from the crowd.";
-  const String OUTFITR_GITHUB_URL =
-      "https://github.com/david-legend/david-legend.github.io";
-  const String OUTFITR_WEB_URL = "https://davidcobbina.com/#/";
+  const String FLUTTER_DURONTO = "Duronto Browser";
+  const String FLUTTER_DURONTO_PLATFORM = "Android / IOS.";
+  const String FLUTTER_DURONTO_CATEGORY = "Bangla Browser";
+  const String FLUTTER_DURONTO_SUBTITLE =
+      "First Bangla browser in the history of Bangladesh";
+  const String FLUTTER_DURONTO_DETAIL =
+      "Duronto is Bangladesh's first Bangla browser with Bangla navigation and many features.";
+  const String FLUTTER_DURONTO_PLAYSTORE_URL =
+      "https://play.google.com/store/apps/details?id=com.duronto.lite&hl=en_US&gl=US";
+  const String FLUTTER_DURONTO_GITHUB_URL =
+      "";
+
 
   //Noteworthy Projects
   const String PROGRAMMING_FOR_DATA_SCIENCE =
@@ -400,15 +313,6 @@ part of values;
       "https://github.com/david-legend/programming-for-data-science-nanodegree";
   const String PROGRAMMING_FOR_DATA_SCIENCE_DETAIL_WEB_URL = "";
 
-  const String FINOPP = "Finopp";
-  const String FINOPP_PLATFORM = "Android / IOS.";
-  const String FINOPP_SUBTITLE =
-      "Finopp - Financial Opportunities - Its an app that connects startups to Investors. I built this UI as a prototype to compete in the African app launchpad(http://techleaders.eg/aal/competition/).";
-  const String FINOPP_DETAIL =
-      "Finopp - Financial Opportunities - Its an app that connects startups to Investors. I built this UI as a prototype to compete in the African app launchpad(http://techleaders.eg/aal/competition/).";
-  const String FINOPP_GITHUB_URL =
-      "https://github.com/david-legend/finopp";
-  const String FINOPP_DETAIL_WEB_URL = "";
 
   const String PYTHON_ALGORITHMS = "Python Algorithms";
   const String PYTHON_ALGORITHMS_PLATFORM = "Python.";
@@ -420,25 +324,26 @@ part of values;
       "https://github.com/david-legend/python-algorithms";
   const String PYTHON_ALGORITHMS_DETAIL_WEB_URL = "";
 
-  const String AMOR_APP = "Amor";
-  const String AMOR_APP_PLATFORM = "Web.";
+  const String ASSISTANT_APP = "ASSISTANT";
+  const String ASSISTANT_APP_PLATFORM = "APP";
   const String AMOR_APP_SUBTITLE =
-      "beautifully designed portfolio website built with flutter.";
-  const String AMOR_APP_DETAIL =
-      "beautifully designed portfolio website built with flutter.";
-  const String AMOR_APP_GITHUB_URL =
+      "Assistant is an on-demand home service app.";
+  const String ASSITANT_APP_DETAIL =
+      "BD Assistant is an on-demand home service app. Save time and get hassle free repairing services of all type of electronics and machines starting from home appliances to vehicle repairing, plumber to electrician services etc.";
+  const String ASSITANT_APP_GITHUB_URL =
       "https://github.com/david-legend/amor";
-  const String AMOR_APP_WEB_URL = "https://david-legend.github.io/amor/";
+  const String ASSITANT_APP_WEB_URL = "https://play.google.com/store/apps/details?id=com.bdassistant.chatbotclient";
 
-  const String ONBOARDING_APP = "Onboarding App.";
-  const String ONBOARDING_APP_PLATFORM = "Android / IOS.";
-  const String ONBOARDING_APP_SUBTITLE =
-      "A beautifully crafted app that takes you through an onboarding experience.";
-  const String ONBOARDING_APP_DETAIL =
-      "A beautifully crafted app that takes you through an onboarding experience.";
-  const String ONBOARDING_APP_GITHUB_URL =
-      "https://github.com/david-legend/onboarding-app";
-  const String ONBOARDING_APP_PLAYSTORE_URL = "";
+
+  const String DIET_ACHIVER_APP = "Diet Achiver";
+  const String DIET_ACHIVER_APP_PLATFORM = "Android / IOS.";
+  const String DIET_ACHIVER_APP_SUBTITLE =
+      "";
+  const String DIET_ACHIVER_APP_DETAIL =
+      "";
+  const String DIET_ACHIVER_APP_GITHUB_URL =
+      "";
+  const String DIET_ACHIVER_APP_PLAYSTORE_URL = "";
 
   // Font Family
   const String VISUELT_PRO = "VisueltPro";

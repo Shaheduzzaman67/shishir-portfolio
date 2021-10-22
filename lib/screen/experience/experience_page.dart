@@ -160,7 +160,7 @@ class _ExperiencePageState extends State<ExperiencePage>
           },
           child: ContentBuilder(
             controller: _experienceControllers[index],
-            number: "/0${index + 1}",
+            number: "0${index + 1}",
             width: width,
             section: data[index].duration.toUpperCase(),
             heading: Column(

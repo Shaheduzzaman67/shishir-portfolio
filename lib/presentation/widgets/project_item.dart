@@ -15,7 +15,6 @@ class ProjectItemData {
     required this.primaryColor,
     required this.category,
     this.designer,
-    this.projectAssets = const [],
     this.imageSize,
     this.technologyUsed,
     this.isPublic = false,
@@ -37,7 +36,6 @@ class ProjectItemData {
   final String image;
   final String coverUrl;
   final String category;
-  final List<String> projectAssets;
   final String portfolioDescription;
   final double? imageSize;
   final String title;

@@ -6,5 +6,5 @@ class DocumentPath {
   // static const String docDir = "assets/documents";
 
   //Docs
-  static const String CV = "$docDir/DAVID_COBBINA_CV.pdf";
+  static const String CV = "$docDir/Shaheduzzaman.pdf";
 }

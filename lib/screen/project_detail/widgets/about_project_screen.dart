@@ -105,7 +105,7 @@ class _AboutprojectState extends State<Aboutproject> {
             text: widget.projectData.portfolioDescription,
             textStyle: bodyTextStyle,
           ),
-          // SpaceH12(),
+           SpaceH20(),
           Container(
             width: projectDataWidth,
             child: Wrap(
@@ -177,31 +177,6 @@ class _AboutprojectState extends State<Aboutproject> {
                     )
                   : Empty(),
               widget.projectData.isLive ? Spacer() : Empty(),
-              widget.projectData.isPublic
-                  ? AnimatedPositionedWidget(
-                      controller: CurvedAnimation(
-                        parent: widget.projectDataController,
-                        curve: Animations.textSlideInCurve,
-                      ),
-                      width: targetWidth,
-                      height: initialWidth,
-                      child: CircularButton(
-                        title: SOURCE_CODE,
-                        color: grey100,
-                        imageColor: black,
-                        startBorderRadius: borderRadius,
-
-                        height: initialWidth,
-                        targetWidth: targetWidth,
-                        titleStyle: buttonStyle,
-
-                        onTap: () {
-                          Functions.launchUrl(widget.projectData.gitHubUrl);
-                        },
-                      ),
-                    )
-                  : Empty(),
-              widget.projectData.isPublic ? Spacer() : Empty(),
             ],
           ),
           widget.projectData.isPublic || widget.projectData.isLive

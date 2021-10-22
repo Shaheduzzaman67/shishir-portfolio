@@ -30,9 +30,16 @@ class AboutHeader extends StatelessWidget {
       width * 0.3,
       medium: width * 0.4,
     );
+
     return ResponsiveBuilder(
       builder: (context, sizingInformation) {
+        final double screenHeight = heightOfScreen(context);
+
         double screenWidth = sizingInformation.screenSize.width;
+        final EdgeInsets padding = EdgeInsets.symmetric(
+          horizontal: screenWidth * 0.1,
+          vertical: screenHeight * 0.1,
+        );
         if (screenWidth <= RefinedBreakpoints().tabletSmall) {
           return Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -43,11 +50,13 @@ class AboutHeader extends StatelessWidget {
               ),
               SpaceH30(),
               Container(
-                color: black,
-                child: Image.asset(
-                  ImagePath.DEV,
-                  width: widthOfScreen(context),
-                  height: assignHeight(context, 0.45),
+                padding: padding,
+                child: ClipRRect(
+                  borderRadius: BorderRadius.all(Radius.circular(50)),
+                  child: Image.asset(
+                    ImagePath.DEV_SHISHIR,
+                    //width: screenWidth,
+                  ),
                 ),
               ),
             ],
@@ -99,7 +108,7 @@ class AboutDescription extends StatelessWidget {
   Widget build(BuildContext context) {
     TextTheme textTheme = Theme.of(context).textTheme;
     TextStyle? style = textTheme.bodyText1?.copyWith(
-      fontSize: responsiveSize(context, 30, 44, medium: 34),
+      fontSize: responsiveSize(context, 25, 35, medium: 30),
       height: 1.2,
       fontWeight: FontWeight.w200,
     );
@@ -108,7 +117,7 @@ class AboutDescription extends StatelessWidget {
       children: [
         AnimatedTextSlideBoxTransition(
           controller: controller,
-          text: ABOUT_DEV_CATCH_LINE_1,
+          text: ABOUT_DEV_1,
           width: width,
           maxLines: 2,
           textStyle: style,
@@ -116,22 +125,7 @@ class AboutDescription extends StatelessWidget {
         SpaceH8(),
         AnimatedTextSlideBoxTransition(
           controller: controller,
-          text: ABOUT_DEV_CATCH_LINE_2,
-          width: width,
-          maxLines: 2,
-          textStyle: style,
-        ),
-        // SpaceH8(),
-        // AnimatedTextSlideBoxTransition(
-        //   controller: controller,
-        //   text: ABOUT_DEV_CATCH_LINE_3,
-
-        //   textStyle: style,
-        // ),
-        SpaceH8(),
-        AnimatedTextSlideBoxTransition(
-          controller: controller,
-          text: ABOUT_DEV_CATCH_LINE_4,
+          text: ABOUT_DEV_2,
           width: width,
           maxLines: 2,
           textStyle: style,
@@ -139,7 +133,7 @@ class AboutDescription extends StatelessWidget {
         SpaceH8(),
         AnimatedTextSlideBoxTransition(
           controller: controller,
-          text: ABOUT_DEV_CATCH_LINE_5,
+          text: ABOUT_DEV_3,
           width: width,
           maxLines: 2,
           textStyle: style,

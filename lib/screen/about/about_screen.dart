@@ -171,9 +171,9 @@ class _AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
                     },
                     child: ContentBuilder(
                       controller: _storyController,
-                      number: "/01 ",
+                      number: "01 ",
                       width: contentAreaWidth,
-                      section: ABOUT_DEV_STORY.toUpperCase(),
+                      section: SUMMERY.toUpperCase(),
                       title: ABOUT_DEV_STORY_TITLE,
                       body: Column(
                         children: [
@@ -181,21 +181,7 @@ class _AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
                             controller: _storySectionAnimation,
                             width: widthOfBody,
                             maxLines: 12,
-                            text: ABOUT_DEV_STORY_CONTENT_1,
-                            textStyle: bodyText1Style,
-                          ),
-                          AnimatedPositionedText(
-                            controller: _storySectionAnimation,
-                            width: widthOfBody,
-                            maxLines: 10,
-                            text: ABOUT_DEV_STORY_CONTENT_2,
-                            textStyle: bodyText1Style,
-                          ),
-                           AnimatedPositionedText(
-                            controller: _storySectionAnimation,
-                            width: widthOfBody,
-                            maxLines: 10,
-                            text: ABOUT_DEV_STORY_CONTENT_3,
+                            text: ABOUT_MYSELF,
                             textStyle: bodyText1Style,
                           ),
                         ],
@@ -214,7 +200,7 @@ class _AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
                     },
                     child: ContentBuilder(
                       controller: _technologyController,
-                      number: "/02 ",
+                      number: "02 ",
                       width: contentAreaWidth,
                       section: ABOUT_DEV_TECHNOLOGY.toUpperCase(),
                       title: ABOUT_DEV_TECHNOLOGY_TITLE,
@@ -262,7 +248,7 @@ class _AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
                     },
                     child: ContentBuilder(
                       controller: _contactController,
-                      number: "/03 ",
+                      number: "03 ",
                       width: contentAreaWidth,
                       section: ABOUT_DEV_CONTACT.toUpperCase(),
                       title: ABOUT_DEV_CONTACT_SOCIAL,
@@ -298,55 +284,6 @@ class _AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
                           ),
                         ],
                       ),
-                    ),
-                  ),
-                  CustomSpacer(heightFactor: 0.1),
-                  VisibilityDetector(
-                    key: Key('quote-section'),
-                    onVisibilityChanged: (visibilityInfo) {
-                      double visiblePercentage =
-                          visibilityInfo.visibleFraction * 100;
-                      if (visiblePercentage > 50) {
-                        _quoteController.forward();
-                      }
-                    },
-                    child: Column(
-                      children: [
-                        AnimatedTextSlideBoxTransition(
-                          controller: _quoteController,
-                          text: FAMOUS_QUOTE,
-                          maxLines: 5,
-                          width: contentAreaWidth,
-                          textAlign: TextAlign.center,
-                          textStyle: titleStyle?.copyWith(
-                            fontSize: responsiveSize(
-                              context,
-                              Sizes.TEXT_SIZE_24,
-                              Sizes.TEXT_SIZE_36,
-                              medium: Sizes.TEXT_SIZE_28,
-                            ),
-                            height: 2.0,
-                          ),
-                        ),
-                        SpaceH20(),
-                        Align(
-                          alignment: Alignment.centerRight,
-                          child: AnimatedTextSlideBoxTransition(
-                            controller: _quoteController,
-                            text: "— ${FAMOUS_QUOTE_AUTHOR}",
-                            textStyle: textTheme.bodyText1?.copyWith(
-                              fontSize: responsiveSize(
-                                context,
-                                Sizes.TEXT_SIZE_16,
-                                Sizes.TEXT_SIZE_18,
-                                medium: Sizes.TEXT_SIZE_16,
-                              ),
-                              fontWeight: FontWeight.w400,
-                              color: grey600,
-                            ),
-                          ),
-                        ),
-                      ],
                     ),
                   ),
                   CustomSpacer(heightFactor: 0.2),

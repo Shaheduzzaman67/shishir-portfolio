@@ -1,3 +1,4 @@
+/*
 import 'package:portfolio/infrastructure/bloc/email_bloc.dart';
 import 'package:get_it/get_it.dart';
 import 'package:http/http.dart' as http;
@@ -13,4 +14,4 @@ void configureDependencies() {
   getIt.registerLazySingleton<EmailApi>(() => EmailApiImpl(client: getIt()));
   getIt.registerLazySingleton(() => http.Client());
 
-}
+}*/
